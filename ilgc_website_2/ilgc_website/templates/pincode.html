@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<!-- Designined by CodingLab | www.youtube.com/codinglabyt -->
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="UTF-8">
+    <link rel= "stylesheet"  href= "{{ url_for('static',filename='styles/style.css') }}">
+    <!--<title> Responsiive Admin Dashboard | CodingLab </title>-->
+    <!-- Boxicons CDN Link -->
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style_contact.css">
+    <script src="https://kit.fontawesome.com/yourcode.js" crossorigin="anonymous"></script>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <script src='https://kit.fontawesome.com/a076d05399.js' crossorigin='anonymous'></script>
+    <link href='https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css' rel='stylesheet'>
+    <script src="https://unpkg.com/akar-icons-fonts"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <iconify-icon icon="ic:baseline-health-and-safety"></iconify-icon>
+    
+    <link rel="stylesheet" href="https://pyscript.net/alpha/pyscript.css" />
+    <script defer src="https://pyscript.net/alpha/pyscript.js"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+
+   </head>
+<body>
+  <div class="sidebar">
+    <div class="logo-details">
+      <i class='bx bxl-c-plus-plus'></i>
+      <span class="logo_name">PHC</span>
+    </div>
+      <ul class="nav-links">
+
+        <li>
+          <a href="index.html" class="active">
+            <i class='bx bx-grid-alt' ></i>
+            <span class="links_name">Pincode Search</span>
+          </a>
+        </li>
+
+        <li>
+          <a href="/ilgc_website/templates/pincode.html">
+            <i class='bx bx-box' ></i>
+            <span class="links_name">Search using Pincode</span>
+          </a>
+        </li>
+
+        <li>
+          <a href="#div_id">
+            <i class='bx bx-list-ul' ></i>
+            <span class="links_name">Contact Us</span>
+          </a>
+        </li>
+        
+      </ul>
+  </div>
+  <section class="home-section">
+    <nav>
+      <div class="sidebar-button">
+        <i class='bx bx-menu sidebarBtn'></i>
+        <span class="dashboard">Pincode</span>
+      </div>
+      
+      <form action="{{ url_for("get_pincode")}}" method="post">
+        <label for="firstname">Enter Pincode:</label>
+        <input type="text" id="pincode" name="pincode" placeholder="Pincode">
+        <button type="submit">Generate</button>
+      </form>
+     <script>
+      let r=0
+      const change=()=>{
+         r=1
+      }
+      if(r==1)
+     </script>
+
+      <!-- <div class="search-box">
+        <input type="text" placeholder="Search...">
+        <i class='bx bx-search' ></i>
+      </div> -->
+      
+     
+
+      <!-- <SELECT id="dropDownchandigarh" NAME="options" class="search-box" ONCHANGE="document.getElementById('search_iframe').src = this.options[this.selectedIndex].value">
+        <option value="default" selected="selected"> Please select District </option>
+        <option data-id="wrapper3" value="/Map Maker/Maps/Chandigarh.html">Chandigarh</option>
+ 
+      </SELECT> -->
+    
+    </nav>
+
+    <div class="home-content">
+      <div class="overview-boxes">
+        <div class="box">
+          <div class="right-side">
+            <div class="box-topic"> PHC's Near You    </div>
+            <div id="wrapperTotal0" class="wrapper_total number" style="display: none;">111</div>
+            <div id="wrapperTotal1" class="wrapper_total number" style="display: none;">45</div>
+            <div id="wrapperTotal2" class="wrapper_total number" style="display: none;">50</div>
+            <div id="wrapperTotal3" class="wrapper_total number" style="display: none;">19</div>
+            <div id="wrapperTotal4" class="wrapper_total number" style="display: none;">44</div>
+            <div id="wrapperTotal5" class="wrapper_total number" style="display: none;">35</div>
+            <div id="wrapperTotal6" class="wrapper_total number" style="display: none;">68</div>
+            <div id="wrapperTotal7" class="wrapper_total number" style="display: none;">55</div>
+            <div id="wrapperTotal8" class="wrapper_total number" style="display: none;">87</div>
+            <div id="wrapperTotal9" class="wrapper_total number" style="display: none;">121</div>
+            <div id="wrapperTotal10" class="wrapper_total number" style="display: none;">105</div>
+            <div id="wrapperTotal11" class="wrapper_total number" style="display: none;">47</div>
+            <div id="wrapperTotal12" class="wrapper_total number" style="display: none;">132</div>
+            <div id="wrapperTotal13" class="wrapper_total number" style="display: none;">48</div>
+            <div id="wrapperTotal14" class="wrapper_total number" style="display: none;">58</div>
+            <div id="wrapperTotal15" class="wrapper_total number" style="display: none;">74</div>
+            <div id="wrapperTotal16" class="wrapper_total number" style="display: none;">27</div>
+            <div id="wrapperTotal17" class="wrapper_total number" style="display: none;">71</div>
+            <div id="wrapperTotal18" class="wrapper_total number" style="display: none;">67</div>
+            <div id="wrapperTotal19" class="wrapper_total number" style="display: none;">33</div>
+            <div id="wrapperTotal20" class="wrapper_total number" style="display: none;">54</div>
+            <div id="wrapperTotal21" class="wrapper_total number" style="display: none;">35</div>
+            <div id="wrapperTotal22" class="wrapper_total number" style="display: none;">61</div>
+            <!-- <div id="wrapper1" class="wrapper_total number" style="display: none;">One</div> -->
+            
+          </div>
+          <i class='bx far fa-hospital	 cart'></i>
+        </div>
+       
+        
+
+     
+
+        <div class="overview-box">
+          <div class="box">
+          <iframe src="generated.html" height="700" width="1220" title="Iframe Example" ></iframe>
+    
+    </div>
+    </div> 
+      </div>
+     
+    </div>
+  </section>
+
+  <script>
+     $('#dropDownpunjab').on('change', function(e){
+    var selectedOption = $(this).find(':selected');
+  
+    if (selectedOption.attr('data-phc') != null) {
+      $('.wrapper_phc:not(#' + selectedOption.attr('data-phc') + ')').hide();
+      $('#' + selectedOption.attr('data-phc')).show();
+    } else {
+      $('.wrapper_phc:not(:hidden)').hide();
+    }
+  });
+  $('#dropDownpunjab').on('change', function(e){
+    var selectedOption = $(this).find(':selected');
+  
+    if (selectedOption.attr('data-shc') != null) {
+      $('.wrapper_shc:not(#' + selectedOption.attr('data-shc') + ')').hide();
+      $('#' + selectedOption.attr('data-shc')).show();
+    } else {
+      $('.wrapper_shc:not(:hidden)').hide();
+    }
+  });
+
+  $('#dropDownpunjab').on('change', function(e){
+    var selectedOption = $(this).find(':selected');
+  
+    if (selectedOption.attr('data-uphc') != null) {
+      $('.wrapper_uphc:not(#' + selectedOption.attr('data-uphc') + ')').hide();
+      $('#' + selectedOption.attr('data-uphc')).show();
+    } else {
+      $('.wrapper_uphc:not(:hidden)').hide();
+    }
+  });
+
+  $('#dropDownpunjab').on('change', function(e){
+    var selectedOption = $(this).find(':selected');
+  
+    if (selectedOption.attr('data-total') != null) {
+      $('.wrapper_total:not(#' + selectedOption.attr('data-total') + ')').hide();
+      $('#' + selectedOption.attr('data-total')).show();
+    } else {
+      $('.wrapper_total:not(:hidden)').hide();
+    }
+  });
+
+   let sidebar = document.querySelector(".sidebar");
+let sidebarBtn = document.querySelector(".sidebarBtn");
+sidebarBtn.onclick = function() {
+  sidebar.classList.toggle("active");
+  if(sidebar.classList.contains("active")){
+  sidebarBtn.classList.replace("bx-menu" ,"bx-menu-alt-right");
+}else
+  sidebarBtn.classList.replace("bx-menu-alt-right", "bx-menu");
+}
+
+   
+   
+ </script>
+
+</body>
+</html>
+

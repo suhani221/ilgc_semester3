@@ -1,0 +1,964 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.6.0/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.6.0/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_c2fb4973c852f28d640fabcadf50a52e {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+            </style>
+        
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_c2fb4973c852f28d640fabcadf50a52e" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_c2fb4973c852f28d640fabcadf50a52e = L.map(
+                "map_c2fb4973c852f28d640fabcadf50a52e",
+                {
+                    center: [32.1741247, 75.3880346],
+                    crs: L.CRS.EPSG3857,
+                    zoom: 12,
+                    zoomControl: true,
+                    preferCanvas: false,
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_0508c93fd64a67b16ac68dc8d21f1352 = L.tileLayer(
+                "https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {"attribution": "Data by \u0026copy; \u003ca href=\"http://openstreetmap.org\"\u003eOpenStreetMap\u003c/a\u003e, under \u003ca href=\"http://www.openstreetmap.org/copyright\"\u003eODbL\u003c/a\u003e.", "detectRetina": false, "maxNativeZoom": 18, "maxZoom": 18, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            ).addTo(map_c2fb4973c852f28d640fabcadf50a52e);
+        
+    
+            var marker_31dc728936d064b11965de252fe5ef51 = L.marker(
+                [32.4265127, 75.84813],
+                {}
+            ).addTo(map_c2fb4973c852f28d640fabcadf50a52e);
+        
+    
+            var icon_e9cb6c4904a94b7b20f5a7478ecd637d = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "plus", "iconColor": "white", "markerColor": "green", "prefix": "fa"}
+            );
+            marker_31dc728936d064b11965de252fe5ef51.setIcon(icon_e9cb6c4904a94b7b20f5a7478ecd637d);
+        
+    
+        var popup_28b91b93da18412495cee3b64debfb6c = L.popup({"maxWidth": 500});
+
+        
+            
+                var html_1295983c37a9e5d9be7db4ff28a935ac = $(`<div id="html_1295983c37a9e5d9be7db4ff28a935ac" style="width: 100.0%; height: 100.0%;"><!DOCTYPE html>     <html>      <head>     <h4 style="margin-bottom:10"; width="200px"><a href="https://ab-hwc.nhp.gov.in/Gallery/tableuphotoGallery/7322485470" target="_blank" style="text-decoration: none;color:red;" >Batwan</a></h4>      </head>         <table style="height: 160px; width: 420px;">     <tbody>      <tr>     <td style="background-color: #f0f0f0;"><span style="color: #000000;">Latitude</span></td>     <td style="width: 150px;background-color: #edbf33;">32.4265127</td>     </tr>      <tr>     <td style="background-color: #f0f0f0;"><span style="color: #000000;">Google Location</span></td>     <td style="width: 150px;background-color: #edbf33;"><a href="https://www.google.com/maps?q=32.4265127,75.84813" target="_blank style="text-decoration: none;color:black;">Open in Google Maps</a></td>     </tr>      <tr>     <td style="background-color: #f0f0f0;"><span style="color: black;">Longitude</span></td>     <td style="width: 150px;background-color: #edbf33;">75.84813</td>     </tr>       <tr>     <td style="background-color: #f0f0f0;"><span style="color: #000000;">Footfall</span></td>     <td style="width: 150px;background-color: #edbf33;">7,620</td>     </tr>      <tr>     <td style="background-color: #f0f0f0;">     <span style="color: black;">Breastcancer</span>     </td>     <td style="width: 150px;background-color: #edbf33;">191.0</td>     </tr>       <tr>     <td style="background-color: #f0f0f0;"><span style="color: #000000;">Diabetes</span></td>     <td style="width: 150px;background-color: #edbf33;">1,355</td>     </tr>      <tr>     <td style="background-color: #f0f0f0;"><span style="color: #000000;">Hypertension</span></td>     <td style="width: 150px;background-color: #edbf33;">2,073</td>     </tr>      <tr>     <td style="background-color: #f0f0f0;"><span style="color: #000000;">Oral Cancer</span></td>     <td style="width: 150px;background-color: #edbf33;">677</td>     </tr>      </tbody>     </table>     </html>     </div>`)[0];
+                popup_28b91b93da18412495cee3b64debfb6c.setContent(html_1295983c37a9e5d9be7db4ff28a935ac);
+            
+        
+
+        marker_31dc728936d064b11965de252fe5ef51.bindPopup(popup_28b91b93da18412495cee3b64debfb6c)
+        ;
+
+        
+    
+    
+            var feature_group_5652aa6bb778b6170d945c2f91bfffa2 = L.featureGroup(
+                {}
+            ).addTo(map_c2fb4973c852f28d640fabcadf50a52e);
+        
+    
+            var circle_5ccc67e713b74507991023bb001f3a83 = L.circle(
+                [32.4265127, 75.84813],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.1, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 0.0, "radius": 2000.0, "stroke": true, "weight": 3}
+            ).addTo(feature_group_5652aa6bb778b6170d945c2f91bfffa2);
+        
+    
+            var circle_ef1e770eb1e18ada0976c7044e042b0d = L.circle(
+                [32.1741247, 75.3880346],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.1, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 0.0, "radius": 2000.0, "stroke": true, "weight": 3}
+            ).addTo(feature_group_5652aa6bb778b6170d945c2f91bfffa2);
+        
+    
+            var circle_3dafe776325e5e398b0a55090d31fbb4 = L.circle(
+                [32.4490108, 75.8810383],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.1, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 0.0, "radius": 2000.0, "stroke": true, "weight": 3}
+            ).addTo(feature_group_5652aa6bb778b6170d945c2f91bfffa2);
+        
+    
+            var circle_1d1da714bb6705cacc373b0a9e5eddb8 = L.circle(
+                [32.3203352, 75.7509243],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.1, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 0.0, "radius": 2000.0, "stroke": true, "weight": 3}
+            ).addTo(feature_group_5652aa6bb778b6170d945c2f91bfffa2);
+        
+    
+            var circle_206f46d3b08686872ab387a6ddfdef5d = L.circle(
+                [32.33314231, 75.57921705],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.1, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 0.0, "radius": 2000.0, "stroke": true, "weight": 3}
+            ).addTo(feature_group_5652aa6bb778b6170d945c2f91bfffa2);
+        
+    
+            var circle_00fdf12e71b3732ea951c36aa2bf3502 = L.circle(
+                [32.2805626, 75.6601612],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.1, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 0.0, "radius": 2000.0, "stroke": true, "weight": 3}
+            ).addTo(feature_group_5652aa6bb778b6170d945c2f91bfffa2);
+        
+    
+            var circle_7b571449a5b9f3063b050f1929ac82a5 = L.circle(
+                [32.355554, 75.5931838],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.1, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 0.0, "radius": 2000.0, "stroke": true, "weight": 3}
+            ).addTo(feature_group_5652aa6bb778b6170d945c2f91bfffa2);
+        
+    
+            var circle_b497f8e34576582fa289337e2694992e = L.circle(
+                [32.12486213, 75.46765292],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.1, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 0.0, "radius": 2000.0, "stroke": true, "weight": 3}
+            ).addTo(feature_group_5652aa6bb778b6170d945c2f91bfffa2);
+        
+    
+            var circle_362973c8d1e0ac2c2d8bd7ffe32484b9 = L.circle(
+                [32.2821222, 75.6532244],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.1, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 0.0, "radius": 2000.0, "stroke": true, "weight": 3}
+            ).addTo(feature_group_5652aa6bb778b6170d945c2f91bfffa2);
+        
+    
+            var circle_3363d168aaecc3163ecaeaa686eb9da3 = L.circle(
+                [32.230602, 75.5527296],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.1, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 0.0, "radius": 2000.0, "stroke": true, "weight": 3}
+            ).addTo(feature_group_5652aa6bb778b6170d945c2f91bfffa2);
+        
+    
+            var circle_a3f4b7663d0772df3b69d91f478aba1b = L.circle(
+                [32.3161964, 75.5453372],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.1, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 0.0, "radius": 2000.0, "stroke": true, "weight": 3}
+            ).addTo(feature_group_5652aa6bb778b6170d945c2f91bfffa2);
+        
+    
+            var circle_0070a1fb00a5f938116d81085fcdcce2 = L.circle(
+                [32.1362351, 75.4586877],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.1, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 0.0, "radius": 2000.0, "stroke": true, "weight": 3}
+            ).addTo(feature_group_5652aa6bb778b6170d945c2f91bfffa2);
+        
+    
+            var circle_8c56fcb58afcac546d81cb26d4ba9187 = L.circle(
+                [32.2076686, 75.5384057],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.1, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 0.0, "radius": 2000.0, "stroke": true, "weight": 3}
+            ).addTo(feature_group_5652aa6bb778b6170d945c2f91bfffa2);
+        
+    
+            var circle_1fff5c497b9e38c985a17acff8b6baae = L.circle(
+                [32.2800602, 75.6449933],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.1, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 0.0, "radius": 2000.0, "stroke": true, "weight": 3}
+            ).addTo(feature_group_5652aa6bb778b6170d945c2f91bfffa2);
+        
+    
+            var circle_abc197c019b1f474c658a70d50a8d248 = L.circle(
+                [32.2772609, 75.7049829],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.1, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 0.0, "radius": 2000.0, "stroke": true, "weight": 3}
+            ).addTo(feature_group_5652aa6bb778b6170d945c2f91bfffa2);
+        
+    
+            var circle_5834b7edfcca5713469e62c3a43eedbb = L.circle(
+                [32.298376, 75.6684453],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.1, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 0.0, "radius": 2000.0, "stroke": true, "weight": 3}
+            ).addTo(feature_group_5652aa6bb778b6170d945c2f91bfffa2);
+        
+    
+            var circle_9ec8a20bfa2cdbdbc07b0a46a7511587 = L.circle(
+                [32.260962, 75.5729733],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.1, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 0.0, "radius": 2000.0, "stroke": true, "weight": 3}
+            ).addTo(feature_group_5652aa6bb778b6170d945c2f91bfffa2);
+        
+    
+            var circle_8a6da4c841c29baa51b23b2aa0c4c716 = L.circle(
+                [32.1794551, 75.5944375],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.1, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 0.0, "radius": 2000.0, "stroke": true, "weight": 3}
+            ).addTo(feature_group_5652aa6bb778b6170d945c2f91bfffa2);
+        
+    
+            var circle_2e2e1bb5a6ebd25b817ea69399c01a94 = L.circle(
+                [32.0584726, 75.420077],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.1, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 0.0, "radius": 2000.0, "stroke": true, "weight": 3}
+            ).addTo(feature_group_5652aa6bb778b6170d945c2f91bfffa2);
+        
+    
+            var circle_47eb5444c5a2cc6c461034a5a8673057 = L.circle(
+                [32.2062209, 75.5066713],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.1, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 0.0, "radius": 2000.0, "stroke": true, "weight": 3}
+            ).addTo(feature_group_5652aa6bb778b6170d945c2f91bfffa2);
+        
+    
+            var circle_617fb953e793c8b053ce98e51c93de48 = L.circle(
+                [32.17241722, 75.46956855],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.1, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 0.0, "radius": 2000.0, "stroke": true, "weight": 3}
+            ).addTo(feature_group_5652aa6bb778b6170d945c2f91bfffa2);
+        
+    
+            var circle_0e94a47dc217a226ba89018812f59a3e = L.circle(
+                [32.2113436, 75.4454888],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.1, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 0.0, "radius": 2000.0, "stroke": true, "weight": 3}
+            ).addTo(feature_group_5652aa6bb778b6170d945c2f91bfffa2);
+        
+    
+            var circle_44903c35baf22b2ba8bad984e9062638 = L.circle(
+                [32.2462153, 75.4051546],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.1, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 0.0, "radius": 2000.0, "stroke": true, "weight": 3}
+            ).addTo(feature_group_5652aa6bb778b6170d945c2f91bfffa2);
+        
+    
+            var circle_df4bd8ceccd6b3514273846f912fbcf1 = L.circle(
+                [32.112712, 75.4743434],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.1, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 0.0, "radius": 2000.0, "stroke": true, "weight": 3}
+            ).addTo(feature_group_5652aa6bb778b6170d945c2f91bfffa2);
+        
+    
+            var circle_e895cb1d439f55ce37849da0c4ed4be3 = L.circle(
+                [32.2904163, 75.3775695],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.1, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 0.0, "radius": 2000.0, "stroke": true, "weight": 3}
+            ).addTo(feature_group_5652aa6bb778b6170d945c2f91bfffa2);
+        
+    
+            var circle_9eac1a5639e80dc6b013633f833c21fc = L.circle(
+                [32.2792451, 75.4955106],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.1, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 0.0, "radius": 2000.0, "stroke": true, "weight": 3}
+            ).addTo(feature_group_5652aa6bb778b6170d945c2f91bfffa2);
+        
+    
+            var circle_d7b32b3afc8d0d4b32c3ec3244ea64fc = L.circle(
+                [32.3264662, 75.4656056],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.1, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 0.0, "radius": 2000.0, "stroke": true, "weight": 3}
+            ).addTo(feature_group_5652aa6bb778b6170d945c2f91bfffa2);
+        
+    
+            var marker_cf8172995ccb3e4e5c009085835080fe = L.marker(
+                [32.1741247, 75.3880346],
+                {}
+            ).addTo(map_c2fb4973c852f28d640fabcadf50a52e);
+        
+    
+            var icon_73cd8c90603204a090e369c6da0832be = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "plus", "iconColor": "white", "markerColor": "green", "prefix": "fa"}
+            );
+            marker_cf8172995ccb3e4e5c009085835080fe.setIcon(icon_73cd8c90603204a090e369c6da0832be);
+        
+    
+        var popup_4852794761b743e92c2a21ac07113509 = L.popup({"maxWidth": 500});
+
+        
+            
+                var html_6961ff44e2baa77dea2c4724100a97a9 = $(`<div id="html_6961ff44e2baa77dea2c4724100a97a9" style="width: 100.0%; height: 100.0%;"><!DOCTYPE html>     <html>      <head>     <h4 style="margin-bottom:10"; width="200px"><a href="https://ab-hwc.nhp.gov.in/Gallery/tableuphotoGallery/7413587341" target="_blank" style="text-decoration: none;color:red;" >Drung Khad</a></h4>      </head>         <table style="height: 160px; width: 420px;">     <tbody>      <tr>     <td style="background-color: #f0f0f0;"><span style="color: #000000;">Latitude</span></td>     <td style="width: 150px;background-color: #edbf33;">32.1741247</td>     </tr>      <tr>     <td style="background-color: #f0f0f0;"><span style="color: #000000;">Google Location</span></td>     <td style="width: 150px;background-color: #edbf33;"><a href="https://www.google.com/maps?q=32.1741247,75.3880346" target="_blank style="text-decoration: none;color:black;">Open in Google Maps</a></td>     </tr>      <tr>     <td style="background-color: #f0f0f0;"><span style="color: black;">Longitude</span></td>     <td style="width: 150px;background-color: #edbf33;">75.3880346</td>     </tr>       <tr>     <td style="background-color: #f0f0f0;"><span style="color: #000000;">Footfall</span></td>     <td style="width: 150px;background-color: #edbf33;">4,447</td>     </tr>      <tr>     <td style="background-color: #f0f0f0;">     <span style="color: black;">Breastcancer</span>     </td>     <td style="width: 150px;background-color: #edbf33;">nan</td>     </tr>       <tr>     <td style="background-color: #f0f0f0;"><span style="color: #000000;">Diabetes</span></td>     <td style="width: 150px;background-color: #edbf33;">nan</td>     </tr>      <tr>     <td style="background-color: #f0f0f0;"><span style="color: #000000;">Hypertension</span></td>     <td style="width: 150px;background-color: #edbf33;">nan</td>     </tr>      <tr>     <td style="background-color: #f0f0f0;"><span style="color: #000000;">Oral Cancer</span></td>     <td style="width: 150px;background-color: #edbf33;">nan</td>     </tr>      </tbody>     </table>     </html>     </div>`)[0];
+                popup_4852794761b743e92c2a21ac07113509.setContent(html_6961ff44e2baa77dea2c4724100a97a9);
+            
+        
+
+        marker_cf8172995ccb3e4e5c009085835080fe.bindPopup(popup_4852794761b743e92c2a21ac07113509)
+        ;
+
+        
+    
+    
+            var marker_e2586d708308744992b115c4bc33843f = L.marker(
+                [32.4490108, 75.8810383],
+                {}
+            ).addTo(map_c2fb4973c852f28d640fabcadf50a52e);
+        
+    
+            var icon_9fb323dfb73d5814243efd8e56a34d0c = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "plus", "iconColor": "white", "markerColor": "green", "prefix": "fa"}
+            );
+            marker_e2586d708308744992b115c4bc33843f.setIcon(icon_9fb323dfb73d5814243efd8e56a34d0c);
+        
+    
+        var popup_5b3b707ea2dbf5b0ef451d7af976859e = L.popup({"maxWidth": 500});
+
+        
+            
+                var html_0f590b1843aeefc6df80ea0284651f23 = $(`<div id="html_0f590b1843aeefc6df80ea0284651f23" style="width: 100.0%; height: 100.0%;"><!DOCTYPE html>     <html>      <head>     <h4 style="margin-bottom:10"; width="200px"><a href="https://ab-hwc.nhp.gov.in/Gallery/tableuphotoGallery/6481843651" target="_blank" style="text-decoration: none;color:red;" >Dukh Naili</a></h4>      </head>         <table style="height: 160px; width: 420px;">     <tbody>      <tr>     <td style="background-color: #f0f0f0;"><span style="color: #000000;">Latitude</span></td>     <td style="width: 150px;background-color: #edbf33;">32.4490108</td>     </tr>      <tr>     <td style="background-color: #f0f0f0;"><span style="color: #000000;">Google Location</span></td>     <td style="width: 150px;background-color: #edbf33;"><a href="https://www.google.com/maps?q=32.4490108,75.8810383" target="_blank style="text-decoration: none;color:black;">Open in Google Maps</a></td>     </tr>      <tr>     <td style="background-color: #f0f0f0;"><span style="color: black;">Longitude</span></td>     <td style="width: 150px;background-color: #edbf33;">75.8810383</td>     </tr>       <tr>     <td style="background-color: #f0f0f0;"><span style="color: #000000;">Footfall</span></td>     <td style="width: 150px;background-color: #edbf33;">3,384</td>     </tr>      <tr>     <td style="background-color: #f0f0f0;">     <span style="color: black;">Breastcancer</span>     </td>     <td style="width: 150px;background-color: #edbf33;">51.0</td>     </tr>       <tr>     <td style="background-color: #f0f0f0;"><span style="color: #000000;">Diabetes</span></td>     <td style="width: 150px;background-color: #edbf33;">1</td>     </tr>      <tr>     <td style="background-color: #f0f0f0;"><span style="color: #000000;">Hypertension</span></td>     <td style="width: 150px;background-color: #edbf33;">125</td>     </tr>      <tr>     <td style="background-color: #f0f0f0;"><span style="color: #000000;">Oral Cancer</span></td>     <td style="width: 150px;background-color: #edbf33;">126</td>     </tr>      </tbody>     </table>     </html>     </div>`)[0];
+                popup_5b3b707ea2dbf5b0ef451d7af976859e.setContent(html_0f590b1843aeefc6df80ea0284651f23);
+            
+        
+
+        marker_e2586d708308744992b115c4bc33843f.bindPopup(popup_5b3b707ea2dbf5b0ef451d7af976859e)
+        ;
+
+        
+    
+    
+            var marker_4f8aaf5b8f32d1a458ff519d6554a622 = L.marker(
+                [32.3203352, 75.7509243],
+                {}
+            ).addTo(map_c2fb4973c852f28d640fabcadf50a52e);
+        
+    
+            var icon_617e88a234260473289105b557a29f7f = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "plus", "iconColor": "white", "markerColor": "green", "prefix": "fa"}
+            );
+            marker_4f8aaf5b8f32d1a458ff519d6554a622.setIcon(icon_617e88a234260473289105b557a29f7f);
+        
+    
+        var popup_deceffdba87d3f8b84d008030ba505d0 = L.popup({"maxWidth": 500});
+
+        
+            
+                var html_c3a4216b20f9c9b3b12435baa5c5d713 = $(`<div id="html_c3a4216b20f9c9b3b12435baa5c5d713" style="width: 100.0%; height: 100.0%;"><!DOCTYPE html>     <html>      <head>     <h4 style="margin-bottom:10"; width="200px"><a href="https://ab-hwc.nhp.gov.in/Gallery/tableuphotoGallery/2583785767" target="_blank" style="text-decoration: none;color:red;" >Fangtoli</a></h4>      </head>         <table style="height: 160px; width: 420px;">     <tbody>      <tr>     <td style="background-color: #f0f0f0;"><span style="color: #000000;">Latitude</span></td>     <td style="width: 150px;background-color: #edbf33;">32.3203352</td>     </tr>      <tr>     <td style="background-color: #f0f0f0;"><span style="color: #000000;">Google Location</span></td>     <td style="width: 150px;background-color: #edbf33;"><a href="https://www.google.com/maps?q=32.3203352,75.7509243" target="_blank style="text-decoration: none;color:black;">Open in Google Maps</a></td>     </tr>      <tr>     <td style="background-color: #f0f0f0;"><span style="color: black;">Longitude</span></td>     <td style="width: 150px;background-color: #edbf33;">75.7509243</td>     </tr>       <tr>     <td style="background-color: #f0f0f0;"><span style="color: #000000;">Footfall</span></td>     <td style="width: 150px;background-color: #edbf33;">6,923</td>     </tr>      <tr>     <td style="background-color: #f0f0f0;">     <span style="color: black;">Breastcancer</span>     </td>     <td style="width: 150px;background-color: #edbf33;">488.0</td>     </tr>       <tr>     <td style="background-color: #f0f0f0;"><span style="color: #000000;">Diabetes</span></td>     <td style="width: 150px;background-color: #edbf33;">664</td>     </tr>      <tr>     <td style="background-color: #f0f0f0;"><span style="color: #000000;">Hypertension</span></td>     <td style="width: 150px;background-color: #edbf33;">3,434</td>     </tr>      <tr>     <td style="background-color: #f0f0f0;"><span style="color: #000000;">Oral Cancer</span></td>     <td style="width: 150px;background-color: #edbf33;">590</td>     </tr>      </tbody>     </table>     </html>     </div>`)[0];
+                popup_deceffdba87d3f8b84d008030ba505d0.setContent(html_c3a4216b20f9c9b3b12435baa5c5d713);
+            
+        
+
+        marker_4f8aaf5b8f32d1a458ff519d6554a622.bindPopup(popup_deceffdba87d3f8b84d008030ba505d0)
+        ;
+
+        
+    
+    
+            var marker_b46226db05c84f2e8c387167fb8cf653 = L.marker(
+                [32.33314231, 75.57921705],
+                {}
+            ).addTo(map_c2fb4973c852f28d640fabcadf50a52e);
+        
+    
+            var icon_35eb7e63a0764a9ff1f2d76ce4a8a8a6 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "plus", "iconColor": "white", "markerColor": "green", "prefix": "fa"}
+            );
+            marker_b46226db05c84f2e8c387167fb8cf653.setIcon(icon_35eb7e63a0764a9ff1f2d76ce4a8a8a6);
+        
+    
+        var popup_639bab84eda19e10bc008d84c29a0026 = L.popup({"maxWidth": 500});
+
+        
+            
+                var html_94b2ba783eb97f9cc5a545fd2cb98d72 = $(`<div id="html_94b2ba783eb97f9cc5a545fd2cb98d72" style="width: 100.0%; height: 100.0%;"><!DOCTYPE html>     <html>      <head>     <h4 style="margin-bottom:10"; width="200px"><a href="https://ab-hwc.nhp.gov.in/Gallery/tableuphotoGallery/6468187171" target="_blank" style="text-decoration: none;color:red;" >Ferozepur Kalan</a></h4>      </head>         <table style="height: 160px; width: 420px;">     <tbody>      <tr>     <td style="background-color: #f0f0f0;"><span style="color: #000000;">Latitude</span></td>     <td style="width: 150px;background-color: #edbf33;">32.33314231</td>     </tr>      <tr>     <td style="background-color: #f0f0f0;"><span style="color: #000000;">Google Location</span></td>     <td style="width: 150px;background-color: #edbf33;"><a href="https://www.google.com/maps?q=32.33314231,75.57921705" target="_blank style="text-decoration: none;color:black;">Open in Google Maps</a></td>     </tr>      <tr>     <td style="background-color: #f0f0f0;"><span style="color: black;">Longitude</span></td>     <td style="width: 150px;background-color: #edbf33;">75.57921705</td>     </tr>       <tr>     <td style="background-color: #f0f0f0;"><span style="color: #000000;">Footfall</span></td>     <td style="width: 150px;background-color: #edbf33;">6,033</td>     </tr>      <tr>     <td style="background-color: #f0f0f0;">     <span style="color: black;">Breastcancer</span>     </td>     <td style="width: 150px;background-color: #edbf33;">358.0</td>     </tr>       <tr>     <td style="background-color: #f0f0f0;"><span style="color: #000000;">Diabetes</span></td>     <td style="width: 150px;background-color: #edbf33;">1,088</td>     </tr>      <tr>     <td style="background-color: #f0f0f0;"><span style="color: #000000;">Hypertension</span></td>     <td style="width: 150px;background-color: #edbf33;">1,951</td>     </tr>      <tr>     <td style="background-color: #f0f0f0;"><span style="color: #000000;">Oral Cancer</span></td>     <td style="width: 150px;background-color: #edbf33;">534</td>     </tr>      </tbody>     </table>     </html>     </div>`)[0];
+                popup_639bab84eda19e10bc008d84c29a0026.setContent(html_94b2ba783eb97f9cc5a545fd2cb98d72);
+            
+        
+
+        marker_b46226db05c84f2e8c387167fb8cf653.bindPopup(popup_639bab84eda19e10bc008d84c29a0026)
+        ;
+
+        
+    
+    
+            var marker_54505b3058e9d81785adc5bbccb94f1f = L.marker(
+                [32.2805626, 75.6601612],
+                {}
+            ).addTo(map_c2fb4973c852f28d640fabcadf50a52e);
+        
+    
+            var icon_ccc2d9ccfeacc7bd1696e6b84cde6467 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "plus", "iconColor": "white", "markerColor": "green", "prefix": "fa"}
+            );
+            marker_54505b3058e9d81785adc5bbccb94f1f.setIcon(icon_ccc2d9ccfeacc7bd1696e6b84cde6467);
+        
+    
+        var popup_a99de7d0c1f4f17e94a73996d831c434 = L.popup({"maxWidth": 500});
+
+        
+            
+                var html_c47924e9d99ad5fcf042b4f0cd67decd = $(`<div id="html_c47924e9d99ad5fcf042b4f0cd67decd" style="width: 100.0%; height: 100.0%;"><!DOCTYPE html>     <html>      <head>     <h4 style="margin-bottom:10"; width="200px"><a href="https://ab-hwc.nhp.gov.in/Gallery/tableuphotoGallery/4324735382" target="_blank" style="text-decoration: none;color:red;" >Hara</a></h4>      </head>         <table style="height: 160px; width: 420px;">     <tbody>      <tr>     <td style="background-color: #f0f0f0;"><span style="color: #000000;">Latitude</span></td>     <td style="width: 150px;background-color: #edbf33;">32.2805626</td>     </tr>      <tr>     <td style="background-color: #f0f0f0;"><span style="color: #000000;">Google Location</span></td>     <td style="width: 150px;background-color: #edbf33;"><a href="https://www.google.com/maps?q=32.2805626,75.6601612" target="_blank style="text-decoration: none;color:black;">Open in Google Maps</a></td>     </tr>      <tr>     <td style="background-color: #f0f0f0;"><span style="color: black;">Longitude</span></td>     <td style="width: 150px;background-color: #edbf33;">75.6601612</td>     </tr>       <tr>     <td style="background-color: #f0f0f0;"><span style="color: #000000;">Footfall</span></td>     <td style="width: 150px;background-color: #edbf33;">2,253</td>     </tr>      <tr>     <td style="background-color: #f0f0f0;">     <span style="color: black;">Breastcancer</span>     </td>     <td style="width: 150px;background-color: #edbf33;">0.0</td>     </tr>       <tr>     <td style="background-color: #f0f0f0;"><span style="color: #000000;">Diabetes</span></td>     <td style="width: 150px;background-color: #edbf33;">79</td>     </tr>      <tr>     <td style="background-color: #f0f0f0;"><span style="color: #000000;">Hypertension</span></td>     <td style="width: 150px;background-color: #edbf33;">132</td>     </tr>      <tr>     <td style="background-color: #f0f0f0;"><span style="color: #000000;">Oral Cancer</span></td>     <td style="width: 150px;background-color: #edbf33;">105</td>     </tr>      </tbody>     </table>     </html>     </div>`)[0];
+                popup_a99de7d0c1f4f17e94a73996d831c434.setContent(html_c47924e9d99ad5fcf042b4f0cd67decd);
+            
+        
+
+        marker_54505b3058e9d81785adc5bbccb94f1f.bindPopup(popup_a99de7d0c1f4f17e94a73996d831c434)
+        ;
+
+        
+    
+    
+            var marker_143f2a2b5671cd5cae4a2c067d01091a = L.marker(
+                [32.355554, 75.5931838],
+                {}
+            ).addTo(map_c2fb4973c852f28d640fabcadf50a52e);
+        
+    
+            var icon_f6a01c205ad65a2f1eadf74e13caa43f = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "plus", "iconColor": "white", "markerColor": "green", "prefix": "fa"}
+            );
+            marker_143f2a2b5671cd5cae4a2c067d01091a.setIcon(icon_f6a01c205ad65a2f1eadf74e13caa43f);
+        
+    
+        var popup_2c5f692efc107e319129c52cccbf3d89 = L.popup({"maxWidth": 500});
+
+        
+            
+                var html_a22161aebb1220075d02c61810ba95aa = $(`<div id="html_a22161aebb1220075d02c61810ba95aa" style="width: 100.0%; height: 100.0%;"><!DOCTYPE html>     <html>      <head>     <h4 style="margin-bottom:10"; width="200px"><a href="https://ab-hwc.nhp.gov.in/Gallery/tableuphotoGallery/1884518737" target="_blank" style="text-decoration: none;color:red;" >Mirzapur</a></h4>      </head>         <table style="height: 160px; width: 420px;">     <tbody>      <tr>     <td style="background-color: #f0f0f0;"><span style="color: #000000;">Latitude</span></td>     <td style="width: 150px;background-color: #edbf33;">32.355554</td>     </tr>      <tr>     <td style="background-color: #f0f0f0;"><span style="color: #000000;">Google Location</span></td>     <td style="width: 150px;background-color: #edbf33;"><a href="https://www.google.com/maps?q=32.355554,75.5931838" target="_blank style="text-decoration: none;color:black;">Open in Google Maps</a></td>     </tr>      <tr>     <td style="background-color: #f0f0f0;"><span style="color: black;">Longitude</span></td>     <td style="width: 150px;background-color: #edbf33;">75.5931838</td>     </tr>       <tr>     <td style="background-color: #f0f0f0;"><span style="color: #000000;">Footfall</span></td>     <td style="width: 150px;background-color: #edbf33;">3,126</td>     </tr>      <tr>     <td style="background-color: #f0f0f0;">     <span style="color: black;">Breastcancer</span>     </td>     <td style="width: 150px;background-color: #edbf33;">7.0</td>     </tr>       <tr>     <td style="background-color: #f0f0f0;"><span style="color: #000000;">Diabetes</span></td>     <td style="width: 150px;background-color: #edbf33;">131</td>     </tr>      <tr>     <td style="background-color: #f0f0f0;"><span style="color: #000000;">Hypertension</span></td>     <td style="width: 150px;background-color: #edbf33;">1,045</td>     </tr>      <tr>     <td style="background-color: #f0f0f0;"><span style="color: #000000;">Oral Cancer</span></td>     <td style="width: 150px;background-color: #edbf33;">258</td>     </tr>      </tbody>     </table>     </html>     </div>`)[0];
+                popup_2c5f692efc107e319129c52cccbf3d89.setContent(html_a22161aebb1220075d02c61810ba95aa);
+            
+        
+
+        marker_143f2a2b5671cd5cae4a2c067d01091a.bindPopup(popup_2c5f692efc107e319129c52cccbf3d89)
+        ;
+
+        
+    
+    
+            var marker_74c5c7b8a333659d92c7b2cdf2501bd6 = L.marker(
+                [32.12486213, 75.46765292],
+                {}
+            ).addTo(map_c2fb4973c852f28d640fabcadf50a52e);
+        
+    
+            var icon_977dc16a7ac8596bf146cfaa01443271 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "plus", "iconColor": "white", "markerColor": "green", "prefix": "fa"}
+            );
+            marker_74c5c7b8a333659d92c7b2cdf2501bd6.setIcon(icon_977dc16a7ac8596bf146cfaa01443271);
+        
+    
+        var popup_2697930689ffac57f17398a02ed17fae = L.popup({"maxWidth": 500});
+
+        
+            
+                var html_862513d10a4ab2889b32af7d2abad4b0 = $(`<div id="html_862513d10a4ab2889b32af7d2abad4b0" style="width: 100.0%; height: 100.0%;"><!DOCTYPE html>     <html>      <head>     <h4 style="margin-bottom:10"; width="200px"><a href="https://ab-hwc.nhp.gov.in/Gallery/tableuphotoGallery/6861728282" target="_blank" style="text-decoration: none;color:red;" >Ranipur</a></h4>      </head>         <table style="height: 160px; width: 420px;">     <tbody>      <tr>     <td style="background-color: #f0f0f0;"><span style="color: #000000;">Latitude</span></td>     <td style="width: 150px;background-color: #edbf33;">32.12486213</td>     </tr>      <tr>     <td style="background-color: #f0f0f0;"><span style="color: #000000;">Google Location</span></td>     <td style="width: 150px;background-color: #edbf33;"><a href="https://www.google.com/maps?q=32.12486213,75.46765292" target="_blank style="text-decoration: none;color:black;">Open in Google Maps</a></td>     </tr>      <tr>     <td style="background-color: #f0f0f0;"><span style="color: black;">Longitude</span></td>     <td style="width: 150px;background-color: #edbf33;">75.46765292</td>     </tr>       <tr>     <td style="background-color: #f0f0f0;"><span style="color: #000000;">Footfall</span></td>     <td style="width: 150px;background-color: #edbf33;">3,938</td>     </tr>      <tr>     <td style="background-color: #f0f0f0;">     <span style="color: black;">Breastcancer</span>     </td>     <td style="width: 150px;background-color: #edbf33;">41.0</td>     </tr>       <tr>     <td style="background-color: #f0f0f0;"><span style="color: #000000;">Diabetes</span></td>     <td style="width: 150px;background-color: #edbf33;">616</td>     </tr>      <tr>     <td style="background-color: #f0f0f0;"><span style="color: #000000;">Hypertension</span></td>     <td style="width: 150px;background-color: #edbf33;">2,040</td>     </tr>      <tr>     <td style="background-color: #f0f0f0;"><span style="color: #000000;">Oral Cancer</span></td>     <td style="width: 150px;background-color: #edbf33;">2,084</td>     </tr>      </tbody>     </table>     </html>     </div>`)[0];
+                popup_2697930689ffac57f17398a02ed17fae.setContent(html_862513d10a4ab2889b32af7d2abad4b0);
+            
+        
+
+        marker_74c5c7b8a333659d92c7b2cdf2501bd6.bindPopup(popup_2697930689ffac57f17398a02ed17fae)
+        ;
+
+        
+    
+    
+            var marker_9608109c398897ff17b2fe6c2c7f5c8f = L.marker(
+                [32.2821222, 75.6532244],
+                {}
+            ).addTo(map_c2fb4973c852f28d640fabcadf50a52e);
+        
+    
+            var icon_6a152d7bfe2a2a542010c650e2797e31 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "plus", "iconColor": "white", "markerColor": "green", "prefix": "fa"}
+            );
+            marker_9608109c398897ff17b2fe6c2c7f5c8f.setIcon(icon_6a152d7bfe2a2a542010c650e2797e31);
+        
+    
+        var popup_11cde15f8eb97e4c1f446e882931cfac = L.popup({"maxWidth": 500});
+
+        
+            
+                var html_0518b7bcda634e8f967eea43a11f0f72 = $(`<div id="html_0518b7bcda634e8f967eea43a11f0f72" style="width: 100.0%; height: 100.0%;"><!DOCTYPE html>     <html>      <head>     <h4 style="margin-bottom:10"; width="200px"><a href="https://ab-hwc.nhp.gov.in/Gallery/tableuphotoGallery/4338441274" target="_blank" style="text-decoration: none;color:red;" >Abadgarh</a></h4>      </head>         <table style="height: 160px; width: 420px;">     <tbody>      <tr>     <td style="background-color: #f0f0f0;"><span style="color: #000000;">Latitude</span></td>     <td style="width: 150px;background-color: #edbf33;">32.2821222</td>     </tr>      <tr>     <td style="background-color: #f0f0f0;"><span style="color: #000000;">Google Location</span></td>     <td style="width: 150px;background-color: #edbf33;"><a href="https://www.google.com/maps?q=32.2821222,75.6532244" target="_blank style="text-decoration: none;color:black;">Open in Google Maps</a></td>     </tr>      <tr>     <td style="background-color: #f0f0f0;"><span style="color: black;">Longitude</span></td>     <td style="width: 150px;background-color: #edbf33;">75.6532244</td>     </tr>       <tr>     <td style="background-color: #f0f0f0;"><span style="color: #000000;">Footfall</span></td>     <td style="width: 150px;background-color: #edbf33;">2,754</td>     </tr>      <tr>     <td style="background-color: #f0f0f0;">     <span style="color: black;">Breastcancer</span>     </td>     <td style="width: 150px;background-color: #edbf33;">170.0</td>     </tr>       <tr>     <td style="background-color: #f0f0f0;"><span style="color: #000000;">Diabetes</span></td>     <td style="width: 150px;background-color: #edbf33;">404</td>     </tr>      <tr>     <td style="background-color: #f0f0f0;"><span style="color: #000000;">Hypertension</span></td>     <td style="width: 150px;background-color: #edbf33;">538</td>     </tr>      <tr>     <td style="background-color: #f0f0f0;"><span style="color: #000000;">Oral Cancer</span></td>     <td style="width: 150px;background-color: #edbf33;">541</td>     </tr>      </tbody>     </table>     </html>     </div>`)[0];
+                popup_11cde15f8eb97e4c1f446e882931cfac.setContent(html_0518b7bcda634e8f967eea43a11f0f72);
+            
+        
+
+        marker_9608109c398897ff17b2fe6c2c7f5c8f.bindPopup(popup_11cde15f8eb97e4c1f446e882931cfac)
+        ;
+
+        
+    
+    
+            var marker_102463d2b7cab907a0c3057ad632dfc0 = L.marker(
+                [32.230602, 75.5527296],
+                {}
+            ).addTo(map_c2fb4973c852f28d640fabcadf50a52e);
+        
+    
+            var icon_b18b94367527102d9e699e7d24bcb0a1 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "plus", "iconColor": "white", "markerColor": "green", "prefix": "fa"}
+            );
+            marker_102463d2b7cab907a0c3057ad632dfc0.setIcon(icon_b18b94367527102d9e699e7d24bcb0a1);
+        
+    
+        var popup_69995e3a2da98fc93b091b0390412459 = L.popup({"maxWidth": 500});
+
+        
+            
+                var html_2885fd1e4261ab472f40e69beb2bf3c8 = $(`<div id="html_2885fd1e4261ab472f40e69beb2bf3c8" style="width: 100.0%; height: 100.0%;"><!DOCTYPE html>     <html>      <head>     <h4 style="margin-bottom:10"; width="200px"><a href="https://ab-hwc.nhp.gov.in/Gallery/tableuphotoGallery/7413426847" target="_blank" style="text-decoration: none;color:red;" >Balsua</a></h4>      </head>         <table style="height: 160px; width: 420px;">     <tbody>      <tr>     <td style="background-color: #f0f0f0;"><span style="color: #000000;">Latitude</span></td>     <td style="width: 150px;background-color: #edbf33;">32.230602</td>     </tr>      <tr>     <td style="background-color: #f0f0f0;"><span style="color: #000000;">Google Location</span></td>     <td style="width: 150px;background-color: #edbf33;"><a href="https://www.google.com/maps?q=32.230602,75.5527296" target="_blank style="text-decoration: none;color:black;">Open in Google Maps</a></td>     </tr>      <tr>     <td style="background-color: #f0f0f0;"><span style="color: black;">Longitude</span></td>     <td style="width: 150px;background-color: #edbf33;">75.5527296</td>     </tr>       <tr>     <td style="background-color: #f0f0f0;"><span style="color: #000000;">Footfall</span></td>     <td style="width: 150px;background-color: #edbf33;">4,318</td>     </tr>      <tr>     <td style="background-color: #f0f0f0;">     <span style="color: black;">Breastcancer</span>     </td>     <td style="width: 150px;background-color: #edbf33;">231.0</td>     </tr>       <tr>     <td style="background-color: #f0f0f0;"><span style="color: #000000;">Diabetes</span></td>     <td style="width: 150px;background-color: #edbf33;">313</td>     </tr>      <tr>     <td style="background-color: #f0f0f0;"><span style="color: #000000;">Hypertension</span></td>     <td style="width: 150px;background-color: #edbf33;">868</td>     </tr>      <tr>     <td style="background-color: #f0f0f0;"><span style="color: #000000;">Oral Cancer</span></td>     <td style="width: 150px;background-color: #edbf33;">762</td>     </tr>      </tbody>     </table>     </html>     </div>`)[0];
+                popup_69995e3a2da98fc93b091b0390412459.setContent(html_2885fd1e4261ab472f40e69beb2bf3c8);
+            
+        
+
+        marker_102463d2b7cab907a0c3057ad632dfc0.bindPopup(popup_69995e3a2da98fc93b091b0390412459)
+        ;
+
+        
+    
+    
+            var marker_ba5675eed20f4bfd0178d8e3a3ca2ca5 = L.marker(
+                [32.3161964, 75.5453372],
+                {}
+            ).addTo(map_c2fb4973c852f28d640fabcadf50a52e);
+        
+    
+            var icon_22ffd0af848038da374ec0a97d736b20 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "plus", "iconColor": "white", "markerColor": "green", "prefix": "fa"}
+            );
+            marker_ba5675eed20f4bfd0178d8e3a3ca2ca5.setIcon(icon_22ffd0af848038da374ec0a97d736b20);
+        
+    
+        var popup_02ebdb16e948f410f16829615a336406 = L.popup({"maxWidth": 500});
+
+        
+            
+                var html_4b13e9c60fd60ea93c34c3816b9a319f = $(`<div id="html_4b13e9c60fd60ea93c34c3816b9a319f" style="width: 100.0%; height: 100.0%;"><!DOCTYPE html>     <html>      <head>     <h4 style="margin-bottom:10"; width="200px"><a href="https://ab-hwc.nhp.gov.in/Gallery/tableuphotoGallery/7742618346" target="_blank" style="text-decoration: none;color:red;" >Basroop</a></h4>      </head>         <table style="height: 160px; width: 420px;">     <tbody>      <tr>     <td style="background-color: #f0f0f0;"><span style="color: #000000;">Latitude</span></td>     <td style="width: 150px;background-color: #edbf33;">32.3161964</td>     </tr>      <tr>     <td style="background-color: #f0f0f0;"><span style="color: #000000;">Google Location</span></td>     <td style="width: 150px;background-color: #edbf33;"><a href="https://www.google.com/maps?q=32.3161964,75.5453372" target="_blank style="text-decoration: none;color:black;">Open in Google Maps</a></td>     </tr>      <tr>     <td style="background-color: #f0f0f0;"><span style="color: black;">Longitude</span></td>     <td style="width: 150px;background-color: #edbf33;">75.5453372</td>     </tr>       <tr>     <td style="background-color: #f0f0f0;"><span style="color: #000000;">Footfall</span></td>     <td style="width: 150px;background-color: #edbf33;">4,294</td>     </tr>      <tr>     <td style="background-color: #f0f0f0;">     <span style="color: black;">Breastcancer</span>     </td>     <td style="width: 150px;background-color: #edbf33;">649.0</td>     </tr>       <tr>     <td style="background-color: #f0f0f0;"><span style="color: #000000;">Diabetes</span></td>     <td style="width: 150px;background-color: #edbf33;">676</td>     </tr>      <tr>     <td style="background-color: #f0f0f0;"><span style="color: #000000;">Hypertension</span></td>     <td style="width: 150px;background-color: #edbf33;">956</td>     </tr>      <tr>     <td style="background-color: #f0f0f0;"><span style="color: #000000;">Oral Cancer</span></td>     <td style="width: 150px;background-color: #edbf33;">915</td>     </tr>      </tbody>     </table>     </html>     </div>`)[0];
+                popup_02ebdb16e948f410f16829615a336406.setContent(html_4b13e9c60fd60ea93c34c3816b9a319f);
+            
+        
+
+        marker_ba5675eed20f4bfd0178d8e3a3ca2ca5.bindPopup(popup_02ebdb16e948f410f16829615a336406)
+        ;
+
+        
+    
+    
+            var marker_103f33f43fcf5710c720a3200555db92 = L.marker(
+                [32.1362351, 75.4586877],
+                {}
+            ).addTo(map_c2fb4973c852f28d640fabcadf50a52e);
+        
+    
+            var icon_05e624e7d51a0271125b2ca00b2230a6 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "plus", "iconColor": "white", "markerColor": "green", "prefix": "fa"}
+            );
+            marker_103f33f43fcf5710c720a3200555db92.setIcon(icon_05e624e7d51a0271125b2ca00b2230a6);
+        
+    
+        var popup_4b3c490eee1e739f17e776bba3d53344 = L.popup({"maxWidth": 500});
+
+        
+            
+                var html_8e8800d8bbf56470ab64055700b5f6a5 = $(`<div id="html_8e8800d8bbf56470ab64055700b5f6a5" style="width: 100.0%; height: 100.0%;"><!DOCTYPE html>     <html>      <head>     <h4 style="margin-bottom:10"; width="200px"><a href="https://ab-hwc.nhp.gov.in/Gallery/tableuphotoGallery/8631486456" target="_blank" style="text-decoration: none;color:red;" >Farida Nagar</a></h4>      </head>         <table style="height: 160px; width: 420px;">     <tbody>      <tr>     <td style="background-color: #f0f0f0;"><span style="color: #000000;">Latitude</span></td>     <td style="width: 150px;background-color: #edbf33;">32.1362351</td>     </tr>      <tr>     <td style="background-color: #f0f0f0;"><span style="color: #000000;">Google Location</span></td>     <td style="width: 150px;background-color: #edbf33;"><a href="https://www.google.com/maps?q=32.1362351,75.4586877" target="_blank style="text-decoration: none;color:black;">Open in Google Maps</a></td>     </tr>      <tr>     <td style="background-color: #f0f0f0;"><span style="color: black;">Longitude</span></td>     <td style="width: 150px;background-color: #edbf33;">75.4586877</td>     </tr>       <tr>     <td style="background-color: #f0f0f0;"><span style="color: #000000;">Footfall</span></td>     <td style="width: 150px;background-color: #edbf33;">2,163</td>     </tr>      <tr>     <td style="background-color: #f0f0f0;">     <span style="color: black;">Breastcancer</span>     </td>     <td style="width: 150px;background-color: #edbf33;">0.0</td>     </tr>       <tr>     <td style="background-color: #f0f0f0;"><span style="color: #000000;">Diabetes</span></td>     <td style="width: 150px;background-color: #edbf33;">10</td>     </tr>      <tr>     <td style="background-color: #f0f0f0;"><span style="color: #000000;">Hypertension</span></td>     <td style="width: 150px;background-color: #edbf33;">21</td>     </tr>      <tr>     <td style="background-color: #f0f0f0;"><span style="color: #000000;">Oral Cancer</span></td>     <td style="width: 150px;background-color: #edbf33;">0</td>     </tr>      </tbody>     </table>     </html>     </div>`)[0];
+                popup_4b3c490eee1e739f17e776bba3d53344.setContent(html_8e8800d8bbf56470ab64055700b5f6a5);
+            
+        
+
+        marker_103f33f43fcf5710c720a3200555db92.bindPopup(popup_4b3c490eee1e739f17e776bba3d53344)
+        ;
+
+        
+    
+    
+            var marker_a0d436b198a4417e5d8261d1c9f4de27 = L.marker(
+                [32.2076686, 75.5384057],
+                {}
+            ).addTo(map_c2fb4973c852f28d640fabcadf50a52e);
+        
+    
+            var icon_4fb9ba944982b5dc6495c4dc9366d9ac = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "plus", "iconColor": "white", "markerColor": "green", "prefix": "fa"}
+            );
+            marker_a0d436b198a4417e5d8261d1c9f4de27.setIcon(icon_4fb9ba944982b5dc6495c4dc9366d9ac);
+        
+    
+        var popup_aa9820e58d6f8d64e51101ce6f9510c0 = L.popup({"maxWidth": 500});
+
+        
+            
+                var html_c1d5733a8578eb470be1adb0fe5e4c7e = $(`<div id="html_c1d5733a8578eb470be1adb0fe5e4c7e" style="width: 100.0%; height: 100.0%;"><!DOCTYPE html>     <html>      <head>     <h4 style="margin-bottom:10"; width="200px"><a href="https://ab-hwc.nhp.gov.in/Gallery/tableuphotoGallery/8262724837" target="_blank" style="text-decoration: none;color:red;" >Jhako Lahri</a></h4>      </head>         <table style="height: 160px; width: 420px;">     <tbody>      <tr>     <td style="background-color: #f0f0f0;"><span style="color: #000000;">Latitude</span></td>     <td style="width: 150px;background-color: #edbf33;">32.2076686</td>     </tr>      <tr>     <td style="background-color: #f0f0f0;"><span style="color: #000000;">Google Location</span></td>     <td style="width: 150px;background-color: #edbf33;"><a href="https://www.google.com/maps?q=32.2076686,75.5384057" target="_blank style="text-decoration: none;color:black;">Open in Google Maps</a></td>     </tr>      <tr>     <td style="background-color: #f0f0f0;"><span style="color: black;">Longitude</span></td>     <td style="width: 150px;background-color: #edbf33;">75.5384057</td>     </tr>       <tr>     <td style="background-color: #f0f0f0;"><span style="color: #000000;">Footfall</span></td>     <td style="width: 150px;background-color: #edbf33;">5,195</td>     </tr>      <tr>     <td style="background-color: #f0f0f0;">     <span style="color: black;">Breastcancer</span>     </td>     <td style="width: 150px;background-color: #edbf33;">0.0</td>     </tr>       <tr>     <td style="background-color: #f0f0f0;"><span style="color: #000000;">Diabetes</span></td>     <td style="width: 150px;background-color: #edbf33;">801</td>     </tr>      <tr>     <td style="background-color: #f0f0f0;"><span style="color: #000000;">Hypertension</span></td>     <td style="width: 150px;background-color: #edbf33;">799</td>     </tr>      <tr>     <td style="background-color: #f0f0f0;"><span style="color: #000000;">Oral Cancer</span></td>     <td style="width: 150px;background-color: #edbf33;">769</td>     </tr>      </tbody>     </table>     </html>     </div>`)[0];
+                popup_aa9820e58d6f8d64e51101ce6f9510c0.setContent(html_c1d5733a8578eb470be1adb0fe5e4c7e);
+            
+        
+
+        marker_a0d436b198a4417e5d8261d1c9f4de27.bindPopup(popup_aa9820e58d6f8d64e51101ce6f9510c0)
+        ;
+
+        
+    
+    
+            var marker_16f051fefb3f6da165870cd204d7833a = L.marker(
+                [32.2800602, 75.6449933],
+                {}
+            ).addTo(map_c2fb4973c852f28d640fabcadf50a52e);
+        
+    
+            var icon_ed0628b1b0a6f7dff82a6b326237cae2 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "plus", "iconColor": "white", "markerColor": "green", "prefix": "fa"}
+            );
+            marker_16f051fefb3f6da165870cd204d7833a.setIcon(icon_ed0628b1b0a6f7dff82a6b326237cae2);
+        
+    
+        var popup_0149034be532db8c01eedd6d1db4c202 = L.popup({"maxWidth": 500});
+
+        
+            
+                var html_5918a7fc1524766f13dd4f11579eaaf8 = $(`<div id="html_5918a7fc1524766f13dd4f11579eaaf8" style="width: 100.0%; height: 100.0%;"><!DOCTYPE html>     <html>      <head>     <h4 style="margin-bottom:10"; width="200px"><a href="https://ab-hwc.nhp.gov.in/Gallery/tableuphotoGallery/4363823289" target="_blank" style="text-decoration: none;color:red;" >Lado Chak</a></h4>      </head>         <table style="height: 160px; width: 420px;">     <tbody>      <tr>     <td style="background-color: #f0f0f0;"><span style="color: #000000;">Latitude</span></td>     <td style="width: 150px;background-color: #edbf33;">32.2800602</td>     </tr>      <tr>     <td style="background-color: #f0f0f0;"><span style="color: #000000;">Google Location</span></td>     <td style="width: 150px;background-color: #edbf33;"><a href="https://www.google.com/maps?q=32.2800602,75.6449933" target="_blank style="text-decoration: none;color:black;">Open in Google Maps</a></td>     </tr>      <tr>     <td style="background-color: #f0f0f0;"><span style="color: black;">Longitude</span></td>     <td style="width: 150px;background-color: #edbf33;">75.6449933</td>     </tr>       <tr>     <td style="background-color: #f0f0f0;"><span style="color: #000000;">Footfall</span></td>     <td style="width: 150px;background-color: #edbf33;">3,727</td>     </tr>      <tr>     <td style="background-color: #f0f0f0;">     <span style="color: black;">Breastcancer</span>     </td>     <td style="width: 150px;background-color: #edbf33;">163.0</td>     </tr>       <tr>     <td style="background-color: #f0f0f0;"><span style="color: #000000;">Diabetes</span></td>     <td style="width: 150px;background-color: #edbf33;">184</td>     </tr>      <tr>     <td style="background-color: #f0f0f0;"><span style="color: #000000;">Hypertension</span></td>     <td style="width: 150px;background-color: #edbf33;">254</td>     </tr>      <tr>     <td style="background-color: #f0f0f0;"><span style="color: #000000;">Oral Cancer</span></td>     <td style="width: 150px;background-color: #edbf33;">252</td>     </tr>      </tbody>     </table>     </html>     </div>`)[0];
+                popup_0149034be532db8c01eedd6d1db4c202.setContent(html_5918a7fc1524766f13dd4f11579eaaf8);
+            
+        
+
+        marker_16f051fefb3f6da165870cd204d7833a.bindPopup(popup_0149034be532db8c01eedd6d1db4c202)
+        ;
+
+        
+    
+    
+            var marker_4edfcdd83e6cfb61a5f19ed8f9a1931e = L.marker(
+                [32.2772609, 75.7049829],
+                {}
+            ).addTo(map_c2fb4973c852f28d640fabcadf50a52e);
+        
+    
+            var icon_162891a24608c78629234b4378d4b596 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "plus", "iconColor": "white", "markerColor": "green", "prefix": "fa"}
+            );
+            marker_4edfcdd83e6cfb61a5f19ed8f9a1931e.setIcon(icon_162891a24608c78629234b4378d4b596);
+        
+    
+        var popup_c07319c2d6aaf391d5d710339735cdeb = L.popup({"maxWidth": 500});
+
+        
+            
+                var html_35b58bf633de73ca7c2534184f718782 = $(`<div id="html_35b58bf633de73ca7c2534184f718782" style="width: 100.0%; height: 100.0%;"><!DOCTYPE html>     <html>      <head>     <h4 style="margin-bottom:10"; width="200px"><a href="https://ab-hwc.nhp.gov.in/Gallery/tableuphotoGallery/5141115773" target="_blank" style="text-decoration: none;color:red;" >Mamoon</a></h4>      </head>         <table style="height: 160px; width: 420px;">     <tbody>      <tr>     <td style="background-color: #f0f0f0;"><span style="color: #000000;">Latitude</span></td>     <td style="width: 150px;background-color: #edbf33;">32.2772609</td>     </tr>      <tr>     <td style="background-color: #f0f0f0;"><span style="color: #000000;">Google Location</span></td>     <td style="width: 150px;background-color: #edbf33;"><a href="https://www.google.com/maps?q=32.2772609,75.7049829" target="_blank style="text-decoration: none;color:black;">Open in Google Maps</a></td>     </tr>      <tr>     <td style="background-color: #f0f0f0;"><span style="color: black;">Longitude</span></td>     <td style="width: 150px;background-color: #edbf33;">75.7049829</td>     </tr>       <tr>     <td style="background-color: #f0f0f0;"><span style="color: #000000;">Footfall</span></td>     <td style="width: 150px;background-color: #edbf33;">5,512</td>     </tr>      <tr>     <td style="background-color: #f0f0f0;">     <span style="color: black;">Breastcancer</span>     </td>     <td style="width: 150px;background-color: #edbf33;">196.0</td>     </tr>       <tr>     <td style="background-color: #f0f0f0;"><span style="color: #000000;">Diabetes</span></td>     <td style="width: 150px;background-color: #edbf33;">433</td>     </tr>      <tr>     <td style="background-color: #f0f0f0;"><span style="color: #000000;">Hypertension</span></td>     <td style="width: 150px;background-color: #edbf33;">989</td>     </tr>      <tr>     <td style="background-color: #f0f0f0;"><span style="color: #000000;">Oral Cancer</span></td>     <td style="width: 150px;background-color: #edbf33;">265</td>     </tr>      </tbody>     </table>     </html>     </div>`)[0];
+                popup_c07319c2d6aaf391d5d710339735cdeb.setContent(html_35b58bf633de73ca7c2534184f718782);
+            
+        
+
+        marker_4edfcdd83e6cfb61a5f19ed8f9a1931e.bindPopup(popup_c07319c2d6aaf391d5d710339735cdeb)
+        ;
+
+        
+    
+    
+            var marker_f41560dec8c3ac134f3cce9574141733 = L.marker(
+                [32.298376, 75.6684453],
+                {}
+            ).addTo(map_c2fb4973c852f28d640fabcadf50a52e);
+        
+    
+            var icon_1cb5fcc0cc1c7de485bff96bdd7c2740 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "plus", "iconColor": "white", "markerColor": "green", "prefix": "fa"}
+            );
+            marker_f41560dec8c3ac134f3cce9574141733.setIcon(icon_1cb5fcc0cc1c7de485bff96bdd7c2740);
+        
+    
+        var popup_c1565d4445a5bcde18a8542e03184bd9 = L.popup({"maxWidth": 500});
+
+        
+            
+                var html_65e43c5e5352e3f5a894c13b07f5dc76 = $(`<div id="html_65e43c5e5352e3f5a894c13b07f5dc76" style="width: 100.0%; height: 100.0%;"><!DOCTYPE html>     <html>      <head>     <h4 style="margin-bottom:10"; width="200px"><a href="https://ab-hwc.nhp.gov.in/Gallery/tableuphotoGallery/8784411459" target="_blank" style="text-decoration: none;color:red;" >Manwal</a></h4>      </head>         <table style="height: 160px; width: 420px;">     <tbody>      <tr>     <td style="background-color: #f0f0f0;"><span style="color: #000000;">Latitude</span></td>     <td style="width: 150px;background-color: #edbf33;">32.298376</td>     </tr>      <tr>     <td style="background-color: #f0f0f0;"><span style="color: #000000;">Google Location</span></td>     <td style="width: 150px;background-color: #edbf33;"><a href="https://www.google.com/maps?q=32.298376,75.6684453" target="_blank style="text-decoration: none;color:black;">Open in Google Maps</a></td>     </tr>      <tr>     <td style="background-color: #f0f0f0;"><span style="color: black;">Longitude</span></td>     <td style="width: 150px;background-color: #edbf33;">75.6684453</td>     </tr>       <tr>     <td style="background-color: #f0f0f0;"><span style="color: #000000;">Footfall</span></td>     <td style="width: 150px;background-color: #edbf33;">5,531</td>     </tr>      <tr>     <td style="background-color: #f0f0f0;">     <span style="color: black;">Breastcancer</span>     </td>     <td style="width: 150px;background-color: #edbf33;">775.0</td>     </tr>       <tr>     <td style="background-color: #f0f0f0;"><span style="color: #000000;">Diabetes</span></td>     <td style="width: 150px;background-color: #edbf33;">289</td>     </tr>      <tr>     <td style="background-color: #f0f0f0;"><span style="color: #000000;">Hypertension</span></td>     <td style="width: 150px;background-color: #edbf33;">1,314</td>     </tr>      <tr>     <td style="background-color: #f0f0f0;"><span style="color: #000000;">Oral Cancer</span></td>     <td style="width: 150px;background-color: #edbf33;">1,093</td>     </tr>      </tbody>     </table>     </html>     </div>`)[0];
+                popup_c1565d4445a5bcde18a8542e03184bd9.setContent(html_65e43c5e5352e3f5a894c13b07f5dc76);
+            
+        
+
+        marker_f41560dec8c3ac134f3cce9574141733.bindPopup(popup_c1565d4445a5bcde18a8542e03184bd9)
+        ;
+
+        
+    
+    
+            var marker_650f2109ee2f52ecfaaef3ab97e83a2b = L.marker(
+                [32.260962, 75.5729733],
+                {}
+            ).addTo(map_c2fb4973c852f28d640fabcadf50a52e);
+        
+    
+            var icon_fd95ca18b2d2e5d79a3d99b1a499a9fb = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "plus", "iconColor": "white", "markerColor": "green", "prefix": "fa"}
+            );
+            marker_650f2109ee2f52ecfaaef3ab97e83a2b.setIcon(icon_fd95ca18b2d2e5d79a3d99b1a499a9fb);
+        
+    
+        var popup_333ca9d6cccc3922886a082ec69fcd03 = L.popup({"maxWidth": 500});
+
+        
+            
+                var html_9cd430d5bc315b13965a86ef82325477 = $(`<div id="html_9cd430d5bc315b13965a86ef82325477" style="width: 100.0%; height: 100.0%;"><!DOCTYPE html>     <html>      <head>     <h4 style="margin-bottom:10"; width="200px"><a href="https://ab-hwc.nhp.gov.in/Gallery/tableuphotoGallery/2724728288" target="_blank" style="text-decoration: none;color:red;" >Narot Mehra</a></h4>      </head>         <table style="height: 160px; width: 420px;">     <tbody>      <tr>     <td style="background-color: #f0f0f0;"><span style="color: #000000;">Latitude</span></td>     <td style="width: 150px;background-color: #edbf33;">32.260962</td>     </tr>      <tr>     <td style="background-color: #f0f0f0;"><span style="color: #000000;">Google Location</span></td>     <td style="width: 150px;background-color: #edbf33;"><a href="https://www.google.com/maps?q=32.260962,75.5729733" target="_blank style="text-decoration: none;color:black;">Open in Google Maps</a></td>     </tr>      <tr>     <td style="background-color: #f0f0f0;"><span style="color: black;">Longitude</span></td>     <td style="width: 150px;background-color: #edbf33;">75.5729733</td>     </tr>       <tr>     <td style="background-color: #f0f0f0;"><span style="color: #000000;">Footfall</span></td>     <td style="width: 150px;background-color: #edbf33;">5,880</td>     </tr>      <tr>     <td style="background-color: #f0f0f0;">     <span style="color: black;">Breastcancer</span>     </td>     <td style="width: 150px;background-color: #edbf33;">475.0</td>     </tr>       <tr>     <td style="background-color: #f0f0f0;"><span style="color: #000000;">Diabetes</span></td>     <td style="width: 150px;background-color: #edbf33;">945</td>     </tr>      <tr>     <td style="background-color: #f0f0f0;"><span style="color: #000000;">Hypertension</span></td>     <td style="width: 150px;background-color: #edbf33;">963</td>     </tr>      <tr>     <td style="background-color: #f0f0f0;"><span style="color: #000000;">Oral Cancer</span></td>     <td style="width: 150px;background-color: #edbf33;">813</td>     </tr>      </tbody>     </table>     </html>     </div>`)[0];
+                popup_333ca9d6cccc3922886a082ec69fcd03.setContent(html_9cd430d5bc315b13965a86ef82325477);
+            
+        
+
+        marker_650f2109ee2f52ecfaaef3ab97e83a2b.bindPopup(popup_333ca9d6cccc3922886a082ec69fcd03)
+        ;
+
+        
+    
+    
+            var marker_d1da43aaece30193160855aeea4c37d6 = L.marker(
+                [32.1794551, 75.5944375],
+                {}
+            ).addTo(map_c2fb4973c852f28d640fabcadf50a52e);
+        
+    
+            var icon_1594017d8abc1327c22154d2f6905b2e = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "plus", "iconColor": "white", "markerColor": "green", "prefix": "fa"}
+            );
+            marker_d1da43aaece30193160855aeea4c37d6.setIcon(icon_1594017d8abc1327c22154d2f6905b2e);
+        
+    
+        var popup_df50594c33834f921cad57b318f95f50 = L.popup({"maxWidth": 500});
+
+        
+            
+                var html_2b7b5a9ff411aff62a3bc33a6b05bae2 = $(`<div id="html_2b7b5a9ff411aff62a3bc33a6b05bae2" style="width: 100.0%; height: 100.0%;"><!DOCTYPE html>     <html>      <head>     <h4 style="margin-bottom:10"; width="200px"><a href="https://ab-hwc.nhp.gov.in/Gallery/tableuphotoGallery/4853277574" target="_blank" style="text-decoration: none;color:red;" >Naurangpur</a></h4>      </head>         <table style="height: 160px; width: 420px;">     <tbody>      <tr>     <td style="background-color: #f0f0f0;"><span style="color: #000000;">Latitude</span></td>     <td style="width: 150px;background-color: #edbf33;">32.1794551</td>     </tr>      <tr>     <td style="background-color: #f0f0f0;"><span style="color: #000000;">Google Location</span></td>     <td style="width: 150px;background-color: #edbf33;"><a href="https://www.google.com/maps?q=32.1794551,75.5944375" target="_blank style="text-decoration: none;color:black;">Open in Google Maps</a></td>     </tr>      <tr>     <td style="background-color: #f0f0f0;"><span style="color: black;">Longitude</span></td>     <td style="width: 150px;background-color: #edbf33;">75.5944375</td>     </tr>       <tr>     <td style="background-color: #f0f0f0;"><span style="color: #000000;">Footfall</span></td>     <td style="width: 150px;background-color: #edbf33;">3,040</td>     </tr>      <tr>     <td style="background-color: #f0f0f0;">     <span style="color: black;">Breastcancer</span>     </td>     <td style="width: 150px;background-color: #edbf33;">0.0</td>     </tr>       <tr>     <td style="background-color: #f0f0f0;"><span style="color: #000000;">Diabetes</span></td>     <td style="width: 150px;background-color: #edbf33;">82</td>     </tr>      <tr>     <td style="background-color: #f0f0f0;"><span style="color: #000000;">Hypertension</span></td>     <td style="width: 150px;background-color: #edbf33;">196</td>     </tr>      <tr>     <td style="background-color: #f0f0f0;"><span style="color: #000000;">Oral Cancer</span></td>     <td style="width: 150px;background-color: #edbf33;">0</td>     </tr>      </tbody>     </table>     </html>     </div>`)[0];
+                popup_df50594c33834f921cad57b318f95f50.setContent(html_2b7b5a9ff411aff62a3bc33a6b05bae2);
+            
+        
+
+        marker_d1da43aaece30193160855aeea4c37d6.bindPopup(popup_df50594c33834f921cad57b318f95f50)
+        ;
+
+        
+    
+    
+            var marker_3fad27965af3655633709c43bf02753f = L.marker(
+                [32.0584726, 75.420077],
+                {}
+            ).addTo(map_c2fb4973c852f28d640fabcadf50a52e);
+        
+    
+            var icon_ff5ea14006d4a14f33356630087ec656 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "plus", "iconColor": "white", "markerColor": "green", "prefix": "fa"}
+            );
+            marker_3fad27965af3655633709c43bf02753f.setIcon(icon_ff5ea14006d4a14f33356630087ec656);
+        
+    
+        var popup_96678ecc248966447284acb213087643 = L.popup({"maxWidth": 500});
+
+        
+            
+                var html_4e8619d3d8bed8b0bcb24ebdbe13344e = $(`<div id="html_4e8619d3d8bed8b0bcb24ebdbe13344e" style="width: 100.0%; height: 100.0%;"><!DOCTYPE html>     <html>      <head>     <h4 style="margin-bottom:10"; width="200px"><a href="https://ab-hwc.nhp.gov.in/Gallery/tableuphotoGallery/6121661752" target="_blank" style="text-decoration: none;color:red;" >Naushera Nalbanda</a></h4>      </head>         <table style="height: 160px; width: 420px;">     <tbody>      <tr>     <td style="background-color: #f0f0f0;"><span style="color: #000000;">Latitude</span></td>     <td style="width: 150px;background-color: #edbf33;">32.0584726</td>     </tr>      <tr>     <td style="background-color: #f0f0f0;"><span style="color: #000000;">Google Location</span></td>     <td style="width: 150px;background-color: #edbf33;"><a href="https://www.google.com/maps?q=32.0584726,75.420077" target="_blank style="text-decoration: none;color:black;">Open in Google Maps</a></td>     </tr>      <tr>     <td style="background-color: #f0f0f0;"><span style="color: black;">Longitude</span></td>     <td style="width: 150px;background-color: #edbf33;">75.420077</td>     </tr>       <tr>     <td style="background-color: #f0f0f0;"><span style="color: #000000;">Footfall</span></td>     <td style="width: 150px;background-color: #edbf33;">3,215</td>     </tr>      <tr>     <td style="background-color: #f0f0f0;">     <span style="color: black;">Breastcancer</span>     </td>     <td style="width: 150px;background-color: #edbf33;">0.0</td>     </tr>       <tr>     <td style="background-color: #f0f0f0;"><span style="color: #000000;">Diabetes</span></td>     <td style="width: 150px;background-color: #edbf33;">32</td>     </tr>      <tr>     <td style="background-color: #f0f0f0;"><span style="color: #000000;">Hypertension</span></td>     <td style="width: 150px;background-color: #edbf33;">107</td>     </tr>      <tr>     <td style="background-color: #f0f0f0;"><span style="color: #000000;">Oral Cancer</span></td>     <td style="width: 150px;background-color: #edbf33;">0</td>     </tr>      </tbody>     </table>     </html>     </div>`)[0];
+                popup_96678ecc248966447284acb213087643.setContent(html_4e8619d3d8bed8b0bcb24ebdbe13344e);
+            
+        
+
+        marker_3fad27965af3655633709c43bf02753f.bindPopup(popup_96678ecc248966447284acb213087643)
+        ;
+
+        
+    
+    
+            var marker_d94eb641ea23e4e0f3beac74a20d0f55 = L.marker(
+                [32.2062209, 75.5066713],
+                {}
+            ).addTo(map_c2fb4973c852f28d640fabcadf50a52e);
+        
+    
+            var icon_c8225096ad80226920d108388a32cd3c = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "plus", "iconColor": "white", "markerColor": "green", "prefix": "fa"}
+            );
+            marker_d94eb641ea23e4e0f3beac74a20d0f55.setIcon(icon_c8225096ad80226920d108388a32cd3c);
+        
+    
+        var popup_2a88566b06aa1f21567f71e006bbb2d5 = L.popup({"maxWidth": 500});
+
+        
+            
+                var html_cf52cb5092c010f9e32d012288d62aab = $(`<div id="html_cf52cb5092c010f9e32d012288d62aab" style="width: 100.0%; height: 100.0%;"><!DOCTYPE html>     <html>      <head>     <h4 style="margin-bottom:10"; width="200px"><a href="https://ab-hwc.nhp.gov.in/Gallery/tableuphotoGallery/2716887662" target="_blank" style="text-decoration: none;color:red;" >Parmanand</a></h4>      </head>         <table style="height: 160px; width: 420px;">     <tbody>      <tr>     <td style="background-color: #f0f0f0;"><span style="color: #000000;">Latitude</span></td>     <td style="width: 150px;background-color: #edbf33;">32.2062209</td>     </tr>      <tr>     <td style="background-color: #f0f0f0;"><span style="color: #000000;">Google Location</span></td>     <td style="width: 150px;background-color: #edbf33;"><a href="https://www.google.com/maps?q=32.2062209,75.5066713" target="_blank style="text-decoration: none;color:black;">Open in Google Maps</a></td>     </tr>      <tr>     <td style="background-color: #f0f0f0;"><span style="color: black;">Longitude</span></td>     <td style="width: 150px;background-color: #edbf33;">75.5066713</td>     </tr>       <tr>     <td style="background-color: #f0f0f0;"><span style="color: #000000;">Footfall</span></td>     <td style="width: 150px;background-color: #edbf33;">6,727</td>     </tr>      <tr>     <td style="background-color: #f0f0f0;">     <span style="color: black;">Breastcancer</span>     </td>     <td style="width: 150px;background-color: #edbf33;">nan</td>     </tr>       <tr>     <td style="background-color: #f0f0f0;"><span style="color: #000000;">Diabetes</span></td>     <td style="width: 150px;background-color: #edbf33;">nan</td>     </tr>      <tr>     <td style="background-color: #f0f0f0;"><span style="color: #000000;">Hypertension</span></td>     <td style="width: 150px;background-color: #edbf33;">nan</td>     </tr>      <tr>     <td style="background-color: #f0f0f0;"><span style="color: #000000;">Oral Cancer</span></td>     <td style="width: 150px;background-color: #edbf33;">nan</td>     </tr>      </tbody>     </table>     </html>     </div>`)[0];
+                popup_2a88566b06aa1f21567f71e006bbb2d5.setContent(html_cf52cb5092c010f9e32d012288d62aab);
+            
+        
+
+        marker_d94eb641ea23e4e0f3beac74a20d0f55.bindPopup(popup_2a88566b06aa1f21567f71e006bbb2d5)
+        ;
+
+        
+    
+    
+            var marker_68a7e53e57061a5d0e924323b342a546 = L.marker(
+                [32.17241722, 75.46956855],
+                {}
+            ).addTo(map_c2fb4973c852f28d640fabcadf50a52e);
+        
+    
+            var icon_a3c5f9f1206c95aa69ea19b613d1404c = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "plus", "iconColor": "white", "markerColor": "green", "prefix": "fa"}
+            );
+            marker_68a7e53e57061a5d0e924323b342a546.setIcon(icon_a3c5f9f1206c95aa69ea19b613d1404c);
+        
+    
+        var popup_500d2b835cbb9929a692598fda0633c6 = L.popup({"maxWidth": 500});
+
+        
+            
+                var html_d8ff4ce357d908ef94769fa22ee3a101 = $(`<div id="html_d8ff4ce357d908ef94769fa22ee3a101" style="width: 100.0%; height: 100.0%;"><!DOCTYPE html>     <html>      <head>     <h4 style="margin-bottom:10"; width="200px"><a href="https://ab-hwc.nhp.gov.in/Gallery/tableuphotoGallery/7626378579" target="_blank" style="text-decoration: none;color:red;" >Saidipur</a></h4>      </head>         <table style="height: 160px; width: 420px;">     <tbody>      <tr>     <td style="background-color: #f0f0f0;"><span style="color: #000000;">Latitude</span></td>     <td style="width: 150px;background-color: #edbf33;">32.17241722</td>     </tr>      <tr>     <td style="background-color: #f0f0f0;"><span style="color: #000000;">Google Location</span></td>     <td style="width: 150px;background-color: #edbf33;"><a href="https://www.google.com/maps?q=32.17241722,75.46956855" target="_blank style="text-decoration: none;color:black;">Open in Google Maps</a></td>     </tr>      <tr>     <td style="background-color: #f0f0f0;"><span style="color: black;">Longitude</span></td>     <td style="width: 150px;background-color: #edbf33;">75.46956855</td>     </tr>       <tr>     <td style="background-color: #f0f0f0;"><span style="color: #000000;">Footfall</span></td>     <td style="width: 150px;background-color: #edbf33;">435</td>     </tr>      <tr>     <td style="background-color: #f0f0f0;">     <span style="color: black;">Breastcancer</span>     </td>     <td style="width: 150px;background-color: #edbf33;">nan</td>     </tr>       <tr>     <td style="background-color: #f0f0f0;"><span style="color: #000000;">Diabetes</span></td>     <td style="width: 150px;background-color: #edbf33;">nan</td>     </tr>      <tr>     <td style="background-color: #f0f0f0;"><span style="color: #000000;">Hypertension</span></td>     <td style="width: 150px;background-color: #edbf33;">nan</td>     </tr>      <tr>     <td style="background-color: #f0f0f0;"><span style="color: #000000;">Oral Cancer</span></td>     <td style="width: 150px;background-color: #edbf33;">nan</td>     </tr>      </tbody>     </table>     </html>     </div>`)[0];
+                popup_500d2b835cbb9929a692598fda0633c6.setContent(html_d8ff4ce357d908ef94769fa22ee3a101);
+            
+        
+
+        marker_68a7e53e57061a5d0e924323b342a546.bindPopup(popup_500d2b835cbb9929a692598fda0633c6)
+        ;
+
+        
+    
+    
+            var marker_a2f423669a5c4b5f05769438effcd055 = L.marker(
+                [32.2113436, 75.4454888],
+                {}
+            ).addTo(map_c2fb4973c852f28d640fabcadf50a52e);
+        
+    
+            var icon_0e851c5828802d372c352f566541b40f = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "plus", "iconColor": "white", "markerColor": "green", "prefix": "fa"}
+            );
+            marker_a2f423669a5c4b5f05769438effcd055.setIcon(icon_0e851c5828802d372c352f566541b40f);
+        
+    
+        var popup_762297d5514d753d27bf1ddb46e0d449 = L.popup({"maxWidth": 500});
+
+        
+            
+                var html_7af4ff6cd6c136e96db266efc55a0562 = $(`<div id="html_7af4ff6cd6c136e96db266efc55a0562" style="width: 100.0%; height: 100.0%;"><!DOCTYPE html>     <html>      <head>     <h4 style="margin-bottom:10"; width="200px"><a href="https://ab-hwc.nhp.gov.in/Gallery/tableuphotoGallery/6267748538" target="_blank" style="text-decoration: none;color:red;" >Darsopur</a></h4>      </head>         <table style="height: 160px; width: 420px;">     <tbody>      <tr>     <td style="background-color: #f0f0f0;"><span style="color: #000000;">Latitude</span></td>     <td style="width: 150px;background-color: #edbf33;">32.2113436</td>     </tr>      <tr>     <td style="background-color: #f0f0f0;"><span style="color: #000000;">Google Location</span></td>     <td style="width: 150px;background-color: #edbf33;"><a href="https://www.google.com/maps?q=32.2113436,75.4454888" target="_blank style="text-decoration: none;color:black;">Open in Google Maps</a></td>     </tr>      <tr>     <td style="background-color: #f0f0f0;"><span style="color: black;">Longitude</span></td>     <td style="width: 150px;background-color: #edbf33;">75.4454888</td>     </tr>       <tr>     <td style="background-color: #f0f0f0;"><span style="color: #000000;">Footfall</span></td>     <td style="width: 150px;background-color: #edbf33;">4,360</td>     </tr>      <tr>     <td style="background-color: #f0f0f0;">     <span style="color: black;">Breastcancer</span>     </td>     <td style="width: 150px;background-color: #edbf33;">0.0</td>     </tr>       <tr>     <td style="background-color: #f0f0f0;"><span style="color: #000000;">Diabetes</span></td>     <td style="width: 150px;background-color: #edbf33;">261</td>     </tr>      <tr>     <td style="background-color: #f0f0f0;"><span style="color: #000000;">Hypertension</span></td>     <td style="width: 150px;background-color: #edbf33;">286</td>     </tr>      <tr>     <td style="background-color: #f0f0f0;"><span style="color: #000000;">Oral Cancer</span></td>     <td style="width: 150px;background-color: #edbf33;">1</td>     </tr>      </tbody>     </table>     </html>     </div>`)[0];
+                popup_762297d5514d753d27bf1ddb46e0d449.setContent(html_7af4ff6cd6c136e96db266efc55a0562);
+            
+        
+
+        marker_a2f423669a5c4b5f05769438effcd055.bindPopup(popup_762297d5514d753d27bf1ddb46e0d449)
+        ;
+
+        
+    
+    
+            var marker_18b0bfc688e7dbbfdd5cf4e928360bb9 = L.marker(
+                [32.2462153, 75.4051546],
+                {}
+            ).addTo(map_c2fb4973c852f28d640fabcadf50a52e);
+        
+    
+            var icon_5205e6e808e0c6fa1507c0e3e9dbbbfa = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "plus", "iconColor": "white", "markerColor": "green", "prefix": "fa"}
+            );
+            marker_18b0bfc688e7dbbfdd5cf4e928360bb9.setIcon(icon_5205e6e808e0c6fa1507c0e3e9dbbbfa);
+        
+    
+        var popup_72db277fec01d348ec6ea9272e21d423 = L.popup({"maxWidth": 500});
+
+        
+            
+                var html_97ea269891a0b2fec2b1beded8bf228b = $(`<div id="html_97ea269891a0b2fec2b1beded8bf228b" style="width: 100.0%; height: 100.0%;"><!DOCTYPE html>     <html>      <head>     <h4 style="margin-bottom:10"; width="200px"><a href="https://ab-hwc.nhp.gov.in/Gallery/tableuphotoGallery/1317883385" target="_blank" style="text-decoration: none;color:red;" >Datial</a></h4>      </head>         <table style="height: 160px; width: 420px;">     <tbody>      <tr>     <td style="background-color: #f0f0f0;"><span style="color: #000000;">Latitude</span></td>     <td style="width: 150px;background-color: #edbf33;">32.2462153</td>     </tr>      <tr>     <td style="background-color: #f0f0f0;"><span style="color: #000000;">Google Location</span></td>     <td style="width: 150px;background-color: #edbf33;"><a href="https://www.google.com/maps?q=32.2462153,75.4051546" target="_blank style="text-decoration: none;color:black;">Open in Google Maps</a></td>     </tr>      <tr>     <td style="background-color: #f0f0f0;"><span style="color: black;">Longitude</span></td>     <td style="width: 150px;background-color: #edbf33;">75.4051546</td>     </tr>       <tr>     <td style="background-color: #f0f0f0;"><span style="color: #000000;">Footfall</span></td>     <td style="width: 150px;background-color: #edbf33;">928</td>     </tr>      <tr>     <td style="background-color: #f0f0f0;">     <span style="color: black;">Breastcancer</span>     </td>     <td style="width: 150px;background-color: #edbf33;">0.0</td>     </tr>       <tr>     <td style="background-color: #f0f0f0;"><span style="color: #000000;">Diabetes</span></td>     <td style="width: 150px;background-color: #edbf33;">221</td>     </tr>      <tr>     <td style="background-color: #f0f0f0;"><span style="color: #000000;">Hypertension</span></td>     <td style="width: 150px;background-color: #edbf33;">242</td>     </tr>      <tr>     <td style="background-color: #f0f0f0;"><span style="color: #000000;">Oral Cancer</span></td>     <td style="width: 150px;background-color: #edbf33;">222</td>     </tr>      </tbody>     </table>     </html>     </div>`)[0];
+                popup_72db277fec01d348ec6ea9272e21d423.setContent(html_97ea269891a0b2fec2b1beded8bf228b);
+            
+        
+
+        marker_18b0bfc688e7dbbfdd5cf4e928360bb9.bindPopup(popup_72db277fec01d348ec6ea9272e21d423)
+        ;
+
+        
+    
+    
+            var marker_f438e3e100d268078c7cd2356c3b63f4 = L.marker(
+                [32.112712, 75.4743434],
+                {}
+            ).addTo(map_c2fb4973c852f28d640fabcadf50a52e);
+        
+    
+            var icon_cc438cb472a3538fecd6585d137ea250 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "plus", "iconColor": "white", "markerColor": "green", "prefix": "fa"}
+            );
+            marker_f438e3e100d268078c7cd2356c3b63f4.setIcon(icon_cc438cb472a3538fecd6585d137ea250);
+        
+    
+        var popup_dda6711484d4cf8ab025184d27072953 = L.popup({"maxWidth": 500});
+
+        
+            
+                var html_17cc726b556bbcb3d70b9144c5da3dc1 = $(`<div id="html_17cc726b556bbcb3d70b9144c5da3dc1" style="width: 100.0%; height: 100.0%;"><!DOCTYPE html>     <html>      <head>     <h4 style="margin-bottom:10"; width="200px"><a href="https://ab-hwc.nhp.gov.in/Gallery/tableuphotoGallery/8644711478" target="_blank" style="text-decoration: none;color:red;" >Gajju Jagir</a></h4>      </head>         <table style="height: 160px; width: 420px;">     <tbody>      <tr>     <td style="background-color: #f0f0f0;"><span style="color: #000000;">Latitude</span></td>     <td style="width: 150px;background-color: #edbf33;">32.112712</td>     </tr>      <tr>     <td style="background-color: #f0f0f0;"><span style="color: #000000;">Google Location</span></td>     <td style="width: 150px;background-color: #edbf33;"><a href="https://www.google.com/maps?q=32.112712,75.4743434" target="_blank style="text-decoration: none;color:black;">Open in Google Maps</a></td>     </tr>      <tr>     <td style="background-color: #f0f0f0;"><span style="color: black;">Longitude</span></td>     <td style="width: 150px;background-color: #edbf33;">75.4743434</td>     </tr>       <tr>     <td style="background-color: #f0f0f0;"><span style="color: #000000;">Footfall</span></td>     <td style="width: 150px;background-color: #edbf33;">2,275</td>     </tr>      <tr>     <td style="background-color: #f0f0f0;">     <span style="color: black;">Breastcancer</span>     </td>     <td style="width: 150px;background-color: #edbf33;">0.0</td>     </tr>       <tr>     <td style="background-color: #f0f0f0;"><span style="color: #000000;">Diabetes</span></td>     <td style="width: 150px;background-color: #edbf33;">424</td>     </tr>      <tr>     <td style="background-color: #f0f0f0;"><span style="color: #000000;">Hypertension</span></td>     <td style="width: 150px;background-color: #edbf33;">431</td>     </tr>      <tr>     <td style="background-color: #f0f0f0;"><span style="color: #000000;">Oral Cancer</span></td>     <td style="width: 150px;background-color: #edbf33;">450</td>     </tr>      </tbody>     </table>     </html>     </div>`)[0];
+                popup_dda6711484d4cf8ab025184d27072953.setContent(html_17cc726b556bbcb3d70b9144c5da3dc1);
+            
+        
+
+        marker_f438e3e100d268078c7cd2356c3b63f4.bindPopup(popup_dda6711484d4cf8ab025184d27072953)
+        ;
+
+        
+    
+    
+            var marker_f13009f6c5a2068d046d59d12b12f8e8 = L.marker(
+                [32.2904163, 75.3775695],
+                {}
+            ).addTo(map_c2fb4973c852f28d640fabcadf50a52e);
+        
+    
+            var icon_1bb18a96db5598927cd94c7b98606ac5 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "plus", "iconColor": "white", "markerColor": "green", "prefix": "fa"}
+            );
+            marker_f13009f6c5a2068d046d59d12b12f8e8.setIcon(icon_1bb18a96db5598927cd94c7b98606ac5);
+        
+    
+        var popup_0d687ea1d8881a18825672b03e61de34 = L.popup({"maxWidth": 500});
+
+        
+            
+                var html_babdb01ea9cdac013d5f900e1a7a9515 = $(`<div id="html_babdb01ea9cdac013d5f900e1a7a9515" style="width: 100.0%; height: 100.0%;"><!DOCTYPE html>     <html>      <head>     <h4 style="margin-bottom:10"; width="200px"><a href="https://ab-hwc.nhp.gov.in/Gallery/tableuphotoGallery/8125427883" target="_blank" style="text-decoration: none;color:red;" >Janial</a></h4>      </head>         <table style="height: 160px; width: 420px;">     <tbody>      <tr>     <td style="background-color: #f0f0f0;"><span style="color: #000000;">Latitude</span></td>     <td style="width: 150px;background-color: #edbf33;">32.2904163</td>     </tr>      <tr>     <td style="background-color: #f0f0f0;"><span style="color: #000000;">Google Location</span></td>     <td style="width: 150px;background-color: #edbf33;"><a href="https://www.google.com/maps?q=32.2904163,75.3775695" target="_blank style="text-decoration: none;color:black;">Open in Google Maps</a></td>     </tr>      <tr>     <td style="background-color: #f0f0f0;"><span style="color: black;">Longitude</span></td>     <td style="width: 150px;background-color: #edbf33;">75.3775695</td>     </tr>       <tr>     <td style="background-color: #f0f0f0;"><span style="color: #000000;">Footfall</span></td>     <td style="width: 150px;background-color: #edbf33;">2,021</td>     </tr>      <tr>     <td style="background-color: #f0f0f0;">     <span style="color: black;">Breastcancer</span>     </td>     <td style="width: 150px;background-color: #edbf33;">7.0</td>     </tr>       <tr>     <td style="background-color: #f0f0f0;"><span style="color: #000000;">Diabetes</span></td>     <td style="width: 150px;background-color: #edbf33;">0</td>     </tr>      <tr>     <td style="background-color: #f0f0f0;"><span style="color: #000000;">Hypertension</span></td>     <td style="width: 150px;background-color: #edbf33;">663</td>     </tr>      <tr>     <td style="background-color: #f0f0f0;"><span style="color: #000000;">Oral Cancer</span></td>     <td style="width: 150px;background-color: #edbf33;">377</td>     </tr>      </tbody>     </table>     </html>     </div>`)[0];
+                popup_0d687ea1d8881a18825672b03e61de34.setContent(html_babdb01ea9cdac013d5f900e1a7a9515);
+            
+        
+
+        marker_f13009f6c5a2068d046d59d12b12f8e8.bindPopup(popup_0d687ea1d8881a18825672b03e61de34)
+        ;
+
+        
+    
+    
+            var marker_5bca94bbb407c2600ed1f96decba0851 = L.marker(
+                [32.2792451, 75.4955106],
+                {}
+            ).addTo(map_c2fb4973c852f28d640fabcadf50a52e);
+        
+    
+            var icon_9a47248cef9d3c0b23ea057ca163365d = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "plus", "iconColor": "white", "markerColor": "green", "prefix": "fa"}
+            );
+            marker_5bca94bbb407c2600ed1f96decba0851.setIcon(icon_9a47248cef9d3c0b23ea057ca163365d);
+        
+    
+        var popup_245709e00d6b6fac40dd2a5d4cc7f417 = L.popup({"maxWidth": 500});
+
+        
+            
+                var html_2700cd1fb5dafcc6d0bdaedf44290524 = $(`<div id="html_2700cd1fb5dafcc6d0bdaedf44290524" style="width: 100.0%; height: 100.0%;"><!DOCTYPE html>     <html>      <head>     <h4 style="margin-bottom:10"; width="200px"><a href="https://ab-hwc.nhp.gov.in/Gallery/tableuphotoGallery/3534165117" target="_blank" style="text-decoration: none;color:red;" >Kiri Khurd</a></h4>      </head>         <table style="height: 160px; width: 420px;">     <tbody>      <tr>     <td style="background-color: #f0f0f0;"><span style="color: #000000;">Latitude</span></td>     <td style="width: 150px;background-color: #edbf33;">32.2792451</td>     </tr>      <tr>     <td style="background-color: #f0f0f0;"><span style="color: #000000;">Google Location</span></td>     <td style="width: 150px;background-color: #edbf33;"><a href="https://www.google.com/maps?q=32.2792451,75.4955106" target="_blank style="text-decoration: none;color:black;">Open in Google Maps</a></td>     </tr>      <tr>     <td style="background-color: #f0f0f0;"><span style="color: black;">Longitude</span></td>     <td style="width: 150px;background-color: #edbf33;">75.4955106</td>     </tr>       <tr>     <td style="background-color: #f0f0f0;"><span style="color: #000000;">Footfall</span></td>     <td style="width: 150px;background-color: #edbf33;">8,246</td>     </tr>      <tr>     <td style="background-color: #f0f0f0;">     <span style="color: black;">Breastcancer</span>     </td>     <td style="width: 150px;background-color: #edbf33;">0.0</td>     </tr>       <tr>     <td style="background-color: #f0f0f0;"><span style="color: #000000;">Diabetes</span></td>     <td style="width: 150px;background-color: #edbf33;">1,073</td>     </tr>      <tr>     <td style="background-color: #f0f0f0;"><span style="color: #000000;">Hypertension</span></td>     <td style="width: 150px;background-color: #edbf33;">3,988</td>     </tr>      <tr>     <td style="background-color: #f0f0f0;"><span style="color: #000000;">Oral Cancer</span></td>     <td style="width: 150px;background-color: #edbf33;">1,513</td>     </tr>      </tbody>     </table>     </html>     </div>`)[0];
+                popup_245709e00d6b6fac40dd2a5d4cc7f417.setContent(html_2700cd1fb5dafcc6d0bdaedf44290524);
+            
+        
+
+        marker_5bca94bbb407c2600ed1f96decba0851.bindPopup(popup_245709e00d6b6fac40dd2a5d4cc7f417)
+        ;
+
+        
+    
+    
+            var marker_bfcaf360e3af850573db0714e7d8e1af = L.marker(
+                [32.3264662, 75.4656056],
+                {}
+            ).addTo(map_c2fb4973c852f28d640fabcadf50a52e);
+        
+    
+            var icon_94acee51874083c45e249f79a62d4f6b = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "plus", "iconColor": "white", "markerColor": "green", "prefix": "fa"}
+            );
+            marker_bfcaf360e3af850573db0714e7d8e1af.setIcon(icon_94acee51874083c45e249f79a62d4f6b);
+        
+    
+        var popup_2d9201fcaf8459e9f36ceaeb12826476 = L.popup({"maxWidth": 500});
+
+        
+            
+                var html_1bd8a9a37972320ffcd2fe12a050f7bc = $(`<div id="html_1bd8a9a37972320ffcd2fe12a050f7bc" style="width: 100.0%; height: 100.0%;"><!DOCTYPE html>     <html>      <head>     <h4 style="margin-bottom:10"; width="200px"><a href="https://ab-hwc.nhp.gov.in/Gallery/tableuphotoGallery/3368183582" target="_blank" style="text-decoration: none;color:red;" >Taloor</a></h4>      </head>         <table style="height: 160px; width: 420px;">     <tbody>      <tr>     <td style="background-color: #f0f0f0;"><span style="color: #000000;">Latitude</span></td>     <td style="width: 150px;background-color: #edbf33;">32.3264662</td>     </tr>      <tr>     <td style="background-color: #f0f0f0;"><span style="color: #000000;">Google Location</span></td>     <td style="width: 150px;background-color: #edbf33;"><a href="https://www.google.com/maps?q=32.3264662,75.4656056" target="_blank style="text-decoration: none;color:black;">Open in Google Maps</a></td>     </tr>      <tr>     <td style="background-color: #f0f0f0;"><span style="color: black;">Longitude</span></td>     <td style="width: 150px;background-color: #edbf33;">75.4656056</td>     </tr>       <tr>     <td style="background-color: #f0f0f0;"><span style="color: #000000;">Footfall</span></td>     <td style="width: 150px;background-color: #edbf33;">1,534</td>     </tr>      <tr>     <td style="background-color: #f0f0f0;">     <span style="color: black;">Breastcancer</span>     </td>     <td style="width: 150px;background-color: #edbf33;">0.0</td>     </tr>       <tr>     <td style="background-color: #f0f0f0;"><span style="color: #000000;">Diabetes</span></td>     <td style="width: 150px;background-color: #edbf33;">639</td>     </tr>      <tr>     <td style="background-color: #f0f0f0;"><span style="color: #000000;">Hypertension</span></td>     <td style="width: 150px;background-color: #edbf33;">990</td>     </tr>      <tr>     <td style="background-color: #f0f0f0;"><span style="color: #000000;">Oral Cancer</span></td>     <td style="width: 150px;background-color: #edbf33;">365</td>     </tr>      </tbody>     </table>     </html>     </div>`)[0];
+                popup_2d9201fcaf8459e9f36ceaeb12826476.setContent(html_1bd8a9a37972320ffcd2fe12a050f7bc);
+            
+        
+
+        marker_bfcaf360e3af850573db0714e7d8e1af.bindPopup(popup_2d9201fcaf8459e9f36ceaeb12826476)
+        ;
+
+        
+    
+</script>
+</html>

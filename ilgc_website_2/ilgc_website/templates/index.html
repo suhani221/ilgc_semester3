@@ -1,0 +1,321 @@
+<!DOCTYPE html>
+<!-- Designined by CodingLab | www.youtube.com/codinglabyt -->
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="UTF-8">
+    <!--<title> Responsiive Admin Dashboard | CodingLab </title>-->
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style_contact.css">
+    <!-- Boxicons CDN Link -->
+    <script src="https://kit.fontawesome.com/yourcode.js" crossorigin="anonymous"></script>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <script src='https://kit.fontawesome.com/a076d05399.js' crossorigin='anonymous'></script>
+    <link href='https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css' rel='stylesheet'>
+    <script src="https://unpkg.com/akar-icons-fonts"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <iconify-icon icon="ic:baseline-health-and-safety"></iconify-icon>
+    
+    <link rel="stylesheet" href="https://pyscript.net/alpha/pyscript.css" />
+    <script defer src="https://pyscript.net/alpha/pyscript.js"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+
+   </head>
+<body>
+  <div class="sidebar">
+    <div class="logo-details">
+      <i class='bx bxl-c-plus-plus'></i>
+      <span class="logo_name">PHC</span>
+    </div>
+      <ul class="nav-links">
+
+        <li>
+          <a href="index.html" class="active">
+            <i class='bx bx-grid-alt' ></i>
+            <span class="links_name">Dashboard</span>
+          </a>
+        </li>
+
+        <li>
+          <a href="/ilgc_website/templates/pincode.html">
+            <i class='bx bx-box' ></i>
+            <span class="links_name">Search using Pincode</span>
+          </a>
+        </li>
+
+        <li>
+          <a href="#div_id">
+            <i class='bx bx-list-ul' ></i>
+            <span class="links_name">Contact Us</span>
+          </a>
+        </li>
+        
+      </ul>
+  </div>
+  <section class="home-section">
+    <nav>
+      <div class="sidebar-button">
+        <i class='bx bx-menu sidebarBtn'></i>
+        <span class="dashboard">Dashboard</span>
+      </div>
+      
+      <select  class="search-box" id="dropDown">
+        <option value="default" selected="selected"> Please select State </option>
+      <option dvalue="1" value="dropDownpunjab" id="rectangle" onClick="change()">Chandigarh</option>
+      <option dvalue="2"  value="dropDownpunjab" id="triangle">Punjab</option>
+      <!-- <option value="three" id="circle">Circle</option> -->
+     </select>
+     <script>
+      let r=0
+      const change=()=>{
+         r=1
+      }
+      if(r==1)
+     </script>
+
+      <!-- <div class="search-box">
+        <input type="text" placeholder="Search...">
+        <i class='bx bx-search' ></i>
+      </div> -->
+      
+      <SELECT id="dropDownpunjab" NAME="options" class="search-box" ONCHANGE="document.getElementById('search_iframe').src = this.options[this.selectedIndex].value">
+        <option dvalue="default" selected="selected"> Please select District </option>
+
+        <option dvalue="1" data-total="wrapperTotal0" data-shc="wrapperSHC0" data-uphc="wrapperUPHC0" data-phc="wrapperPHC0" value="/Map Maker/Maps/Amritsar.html">Amritsar</option>
+  
+        <option dvalue="1" data-total="wrapperTotal1" data-shc="wrapperSHC1" data-uphc="wrapperUPHC1" data-phc="wrapperPHC1" value="/Map Maker/Maps/Barnala.html">Barnala</option>
+        <option dvalue="1" data-total="wrapperTotal2" data-shc="wrapperSHC2" data-uphc="wrapperUPHC2" data-phc="wrapperPHC2" value="/Map Maker/Maps/Bathinda.html">Bathinda</option>
+        <option dvalue="2" data-total="wrapperTotal3" data-shc="wrapperSHC3" data-uphc="wrapperUPHC3" data-phc="wrapperPHC3" value="/Map Maker/Maps/Chandgarh.html">Chandigarh</option>
+        <option dvalue="1" data-total="wrapperTotal4" data-shc="wrapperSHC4" data-uphc="wrapperUPHC4" data-phc="wrapperPHC4" value="/Map Maker/Maps/Faridkot.html">Faridkot</option>
+        <option dvalue="1" data-total="wrapperTotal5" data-shc="wrapperSHC5" data-uphc="wrapperUPHC5" data-phc="wrapperPHC5" value="/Map Maker/Maps/Fategarh_Sahib.html">Fategarh_Sahib</option>
+        <option dvalue="1" data-total="wrapperTotal6" data-shc="wrapperSHC6" data-uphc="wrapperUPHC6" data-phc="wrapperPHC6" value="/Map Maker/Maps/Fazilka.html">Fazilka</option>
+        <option dvalue="1" data-total="wrapperTotal7" data-shc="wrapperSHC7" data-uphc="wrapperUPHC7" data-phc="wrapperPHC7" value="/Map Maker/Maps/Firozpur.html">Firozpur</option>
+        <option dvalue="1" data-total="wrapperTotal8" data-shc="wrapperSHC8" data-uphc="wrapperUPHC8" data-phc="wrapperPHC8" value="/Map Maker/Maps/Gurdaspur.html">Gurdaspur</option>
+        <option dvalue="1" data-total="wrapperTotal9" data-shc="wrapperSHC9" data-uphc="wrapperUPHC9" data-phc="wrapperPHC9" value="/Map Maker/Maps/Hoshiarpur.html">Hoshiarpur</option>
+        <option dvalue="1" data-total="wrapperTotal10" data-shc="wrapperSHC10" data-uphc="wrapperUPHC10" data-phc="wrapperPHC10" value="/Map Maker/Maps/Jalandhar.html">Jalandhar</option>
+        <option dvalue="1" data-total="wrapperTotal11" data-shc="wrapperSHC11" data-uphc="wrapperUPHC11" data-phc="wrapperPHC11" value="/Map Maker/Maps/Kapurthala.html">Kapurthala</option>
+        <option dvalue="1" data-total="wrapperTotal12" data-shc="wrapperSHC12" data-uphc="wrapperUPHC12" data-phc="wrapperPHC12" value="/Map Maker/Maps/Ludhiana.html">Ludhiana</option>
+        <option  dvalue="1" data-total="wrapperTotal13" data-shc="wrapperSHC13" data-uphc="wrapperUPHC13" data-phc="wrapperPHC13" value="/Map Maker/Maps/Mansa.html">Mansa</option>
+        <option dvalue="1" data-total="wrapperTotal14" data-shc="wrapperSHC14" data-uphc="wrapperUPHC14" data-phc="wrapperPHC14" value="/Map Maker/Maps/Moga.html">Moga</option>
+        <option dvalue="1" data-total="wrapperTotal15" data-shc="wrapperSHC15" data-uphc="wrapperUPHC15" data-phc="wrapperPHC15" value="/Map Maker/Maps/Muktsar.html">Muktsar</option>
+        <option dvalue="1" data-total="wrapperTotal16" data-shc="wrapperSHC16" data-uphc="wrapperUPHC16" data-phc="wrapperPHC16" value="/Map Maker/Maps/Pathankot.html">Pathankot</option>
+        <option dvalue="1" data-total="wrapperTotal17" data-shc="wrapperSHC17" data-uphc="wrapperUPHC17" data-phc="wrapperPHC17" value="/Map Maker/Maps/Patiala.html">Patiala</option>
+        <option dvalue="1" data-total="wrapperTotal18" data-shc="wrapperSHC18" data-uphc="wrapperUPHC18" data-phc="wrapperPHC18" value="/Map Maker/Maps/Rupnagar.html">Rupnagar</option>
+        <option dvalue="1" data-total="wrapperTotal19" data-shc="wrapperSHC19" data-uphc="wrapperUPHC19" data-phc="wrapperPHC19" value="/Map Maker/Maps/SAS_Nagar.html">SAS_Nagar</option>
+        <option dvalue="1" data-total="wrapperTotal20" data-shc="wrapperSHC20" data-uphc="wrapperUPHC20" data-phc="wrapperPHC20" value="/Map Maker/Maps/Sangrur.html">Sangrur</option>
+        <option dvalue="1" data-total="wrapperTotal21" data-shc="wrapperSHC21" data-uphc="wrapperUPHC21" data-phc="wrapperPHC21" value="/Map Maker/Maps/Shahid_Bhagat.html">Shahid_Bhagat</option>
+        <option dvalue="1" data-total="wrapperTotal22" data-shc="wrapperSHC22" data-uphc="wrapperUPHC22" data-phc="wrapperPHC22" value="/Map Maker/Maps/Tarn_Taran.html">Tarn_Taran</option>
+    
+
+            <!-- <option data-id1="wrapper1" data-id2="wrapper23" data-id3="wrapper23" data-id4="wrapper23" value="/Map Maker/Maps/Barnala.html">Barnala</option>
+             -->
+      </SELECT>
+
+      <!-- <SELECT id="dropDownchandigarh" NAME="options" class="search-box" ONCHANGE="document.getElementById('search_iframe').src = this.options[this.selectedIndex].value">
+        <option value="default" selected="selected"> Please select District </option>
+        <option data-id="wrapper3" value="/Map Maker/Maps/Chandigarh.html">Chandigarh</option>
+ 
+      </SELECT> -->
+    
+    </nav>
+
+    <div class="home-content">
+      <div class="overview-boxes">
+        <div class="box">
+          <div class="right-side">
+            <div class="box-topic">Total HWCs    </div>
+            <div id="wrapperTotal0" class="wrapper_total number" style="display: none;">111</div>
+            <div id="wrapperTotal1" class="wrapper_total number" style="display: none;">45</div>
+            <div id="wrapperTotal2" class="wrapper_total number" style="display: none;">50</div>
+            <div id="wrapperTotal3" class="wrapper_total number" style="display: none;">19</div>
+            <div id="wrapperTotal4" class="wrapper_total number" style="display: none;">44</div>
+            <div id="wrapperTotal5" class="wrapper_total number" style="display: none;">35</div>
+            <div id="wrapperTotal6" class="wrapper_total number" style="display: none;">68</div>
+            <div id="wrapperTotal7" class="wrapper_total number" style="display: none;">55</div>
+            <div id="wrapperTotal8" class="wrapper_total number" style="display: none;">87</div>
+            <div id="wrapperTotal9" class="wrapper_total number" style="display: none;">121</div>
+            <div id="wrapperTotal10" class="wrapper_total number" style="display: none;">105</div>
+            <div id="wrapperTotal11" class="wrapper_total number" style="display: none;">47</div>
+            <div id="wrapperTotal12" class="wrapper_total number" style="display: none;">132</div>
+            <div id="wrapperTotal13" class="wrapper_total number" style="display: none;">48</div>
+            <div id="wrapperTotal14" class="wrapper_total number" style="display: none;">58</div>
+            <div id="wrapperTotal15" class="wrapper_total number" style="display: none;">74</div>
+            <div id="wrapperTotal16" class="wrapper_total number" style="display: none;">27</div>
+            <div id="wrapperTotal17" class="wrapper_total number" style="display: none;">71</div>
+            <div id="wrapperTotal18" class="wrapper_total number" style="display: none;">67</div>
+            <div id="wrapperTotal19" class="wrapper_total number" style="display: none;">33</div>
+            <div id="wrapperTotal20" class="wrapper_total number" style="display: none;">54</div>
+            <div id="wrapperTotal21" class="wrapper_total number" style="display: none;">35</div>
+            <div id="wrapperTotal22" class="wrapper_total number" style="display: none;">61</div>
+            <!-- <div id="wrapper1" class="wrapper_total number" style="display: none;">One</div> -->
+            
+          </div>
+          <i class='bx far fa-hospital	 cart'></i>
+        </div>
+        <div class="box">
+          <div class="right-side">
+            <div class="box-topic">Total SHCs</div>
+            <div id="wrapperSHC0" class="wrapper_shc number" style="display: none;">109</div>
+            <div id="wrapperSHC1" class="wrapper_shc number" style="display: none;">43</div>
+            <div id="wrapperSHC2" class="wrapper_shc number" style="display: none;">48</div>
+            <div id="wrapperSHC3" class="wrapper_shc number" style="display: none;">0</div>
+            <div id="wrapperSHC4" class="wrapper_shc number" style="display: none;">43</div>
+            <div id="wrapperSHC5" class="wrapper_shc number" style="display: none;">35</div>
+            <div id="wrapperSHC6" class="wrapper_shc number" style="display: none;">60</div>
+            <div id="wrapperSHC7" class="wrapper_shc number" style="display: none;">55</div>
+            <div id="wrapperSHC8" class="wrapper_shc number" style="display: none;">87</div>
+            <div id="wrapperSHC9" class="wrapper_shc number" style="display: none;">119</div>
+            <div id="wrapperSHC10" class="wrapper_shc number" style="display: none;">94</div>
+            <div id="wrapperSHC11" class="wrapper_shc number" style="display: none;">37</div>
+            <div id="wrapperSHC12" class="wrapper_shc number" style="display: none;">131</div>
+            <div id="wrapperSHC13" class="wrapper_shc number" style="display: none;">48</div>
+            <div id="wrapperSHC14" class="wrapper_shc number" style="display: none;">54</div>
+            <div id="wrapperSHC15" class="wrapper_shc number" style="display: none;">70</div>
+            <div id="wrapperSHC16" class="wrapper_shc number" style="display: none;">27</div>
+            <div id="wrapperSHC17" class="wrapper_shc number" style="display: none;">61</div>
+            <div id="wrapperSHC18" class="wrapper_shc number" style="display: none;">65</div>
+            <div id="wrapperSHC19" class="wrapper_shc number" style="display: none;">33</div>
+            <div id="wrapperSHC20" class="wrapper_shc number" style="display: none;">53</div>
+            <div id="wrapperSHC21" class="wrapper_shc number" style="display: none;">32</div>
+            <div id="wrapperSHC22" class="wrapper_shc number" style="display: none;">61</div>
+           
+          </div>
+          <i class='fa fa-hospital-o cart two''></i>
+
+          <!-- <i class='fas fa-hospital  cart two' style='font-size:48px;color:red'></i> -->
+
+          
+        </div>
+        <div class="box">
+          <div class="right-side">
+            <div class="box-topic">Total UPHCs   </div>
+            <div id="wrapperUPHC0" class="wrapper_uphc number" style="display: none;">2</div>
+            <div id="wrapperUPHC1" class="wrapper_uphc number" style="display: none;">0</div>
+            <div id="wrapperUPHC2" class="wrapper_uphc number" style="display: none;">0</div>
+            <div id="wrapperUPHC3" class="wrapper_uphc number" style="display: none;">19</div>
+            <div id="wrapperUPHC4" class="wrapper_uphc number" style="display: none;">0</div>
+            <div id="wrapperUPHC5" class="wrapper_uphc number" style="display: none;">0</div>
+            <div id="wrapperUPHC6" class="wrapper_uphc number" style="display: none;">1</div>
+            <div id="wrapperUPHC7" class="wrapper_uphc number" style="display: none;">0</div>
+            <div id="wrapperUPHC8" class="wrapper_uphc number" style="display: none;">0</div>
+            <div id="wrapperUPHC9" class="wrapper_uphc number" style="display: none;">1</div>
+            <div id="wrapperUPHC10" class="wrapper_uphc number" style="display: none;">3</div>
+            <div id="wrapperUPHC11" class="wrapper_uphc number" style="display: none;">1</div>
+            <div id="wrapperUPHC12" class="wrapper_uphc number" style="display: none;">0</div>
+            <div id="wrapperUPHC13" class="wrapper_uphc number" style="display: none;">0</div>
+            <div id="wrapperUPHC14" class="wrapper_uphc number" style="display: none;">0</div>
+            <div id="wrapperUPHC15" class="wrapper_uphc number" style="display: none;">2</div>
+            <div id="wrapperUPHC16" class="wrapper_uphc number" style="display: none;">0</div>
+            <div id="wrapperUPHC17" class="wrapper_uphc number" style="display: none;">4</div>
+            <div id="wrapperUPHC18" class="wrapper_uphc number" style="display: none;">0</div>
+            <div id="wrapperUPHC19" class="wrapper_uphc number" style="display: none;">0</div>
+            <div id="wrapperUPHC20" class="wrapper_uphc number" style="display: none;">1</div>
+            <div id="wrapperUPHC21" class="wrapper_uphc number" style="display: none;">0</div>
+            <div id="wrapperUPHC22" class="wrapper_uphc number" style="display: none;">0</div>
+          </div>
+          <i class='fa fa-hospital-o cart three' ></i>
+        </div>
+
+        <div class="box">
+          <div class="right-side">
+            <div class="box-topic">Total PHCs</div>
+            <div id="wrapperPHC0" class="wrapper_phc number" style="display: none;">0</div>
+            <div id="wrapperPHC1" class="wrapper_phc number" style="display: none;">2</div>
+            <div id="wrapperPHC2" class="wrapper_phc number" style="display: none;">2</div>
+            <div id="wrapperPHC3" class="wrapper_phc number" style="display: none;">0</div>
+            <div id="wrapperPHC4" class="wrapper_phc number" style="display: none;">1</div>
+            <div id="wrapperPHC5" class="wrapper_phc number" style="display: none;">0</div>
+            <div id="wrapperPHC6" class="wrapper_phc number" style="display: none;">7</div>
+            <div id="wrapperPHC7" class="wrapper_phc number" style="display: none;">0</div>
+            <div id="wrapperPHC8" class="wrapper_phc number" style="display: none;">0</div>
+            <div id="wrapperPHC9" class="wrapper_phc number" style="display: none;">1</div>
+            <div id="wrapperPHC10" class="wrapper_phc number" style="display: none;">8</div>
+            <div id="wrapperPHC11" class="wrapper_phc number" style="display: none;">9</div>
+            <div id="wrapperPHC12" class="wrapper_phc number" style="display: none;">1</div>
+            <div id="wrapperPHC13" class="wrapper_phc number" style="display: none;">0</div>
+            <div id="wrapperPHC14" class="wrapper_phc number" style="display: none;">4</div>
+            <div id="wrapperPHC15" class="wrapper_phc number" style="display: none;">2</div>
+            <div id="wrapperPHC16" class="wrapper_phc number" style="display: none;">0</div>
+            <div id="wrapperPHC17" class="wrapper_phc number" style="display: none;">6</div>
+            <div id="wrapperPHC18" class="wrapper_phc number" style="display: none;">2</div>
+            <div id="wrapperPHC19" class="wrapper_phc number" style="display: none;">0</div>
+            <div id="wrapperPHC20" class="wrapper_phc number" style="display: none;">0</div>
+            <div id="wrapperPHC21" class="wrapper_phc number" style="display: none;">3</div>
+            <div id="wrapperPHC22" class="wrapper_phc number" style="display: none;">0</div>
+                        
+          </div>
+          <i class='fa fa-hospital-o cart four' ></i>
+        </div>
+
+        <div class="overview-box">
+            <div class="box">
+            <iframe src="punjab_map.html" height="700" width="1220" title="Iframe Example" name="search_iframe" id="search_iframe"></iframe>
+     
+    </div>
+    </div>  
+      </div>
+     
+    </div>
+  </section>
+
+  <script>
+     $('#dropDownpunjab').on('change', function(e){
+    var selectedOption = $(this).find(':selected');
+  
+    if (selectedOption.attr('data-phc') != null) {
+      $('.wrapper_phc:not(#' + selectedOption.attr('data-phc') + ')').hide();
+      $('#' + selectedOption.attr('data-phc')).show();
+    } else {
+      $('.wrapper_phc:not(:hidden)').hide();
+    }
+  });
+  $('#dropDownpunjab').on('change', function(e){
+    var selectedOption = $(this).find(':selected');
+  
+    if (selectedOption.attr('data-shc') != null) {
+      $('.wrapper_shc:not(#' + selectedOption.attr('data-shc') + ')').hide();
+      $('#' + selectedOption.attr('data-shc')).show();
+    } else {
+      $('.wrapper_shc:not(:hidden)').hide();
+    }
+  });
+
+  $('#dropDownpunjab').on('change', function(e){
+    var selectedOption = $(this).find(':selected');
+  
+    if (selectedOption.attr('data-uphc') != null) {
+      $('.wrapper_uphc:not(#' + selectedOption.attr('data-uphc') + ')').hide();
+      $('#' + selectedOption.attr('data-uphc')).show();
+    } else {
+      $('.wrapper_uphc:not(:hidden)').hide();
+    }
+  });
+
+  $('#dropDownpunjab').on('change', function(e){
+    var selectedOption = $(this).find(':selected');
+  
+    if (selectedOption.attr('data-total') != null) {
+      $('.wrapper_total:not(#' + selectedOption.attr('data-total') + ')').hide();
+      $('#' + selectedOption.attr('data-total')).show();
+    } else {
+      $('.wrapper_total:not(:hidden)').hide();
+    }
+  });
+
+   let sidebar = document.querySelector(".sidebar");
+let sidebarBtn = document.querySelector(".sidebarBtn");
+sidebarBtn.onclick = function() {
+  sidebar.classList.toggle("active");
+  if(sidebar.classList.contains("active")){
+  sidebarBtn.classList.replace("bx-menu" ,"bx-menu-alt-right");
+}else
+  sidebarBtn.classList.replace("bx-menu-alt-right", "bx-menu");
+}
+
+   
+   
+ </script>
+
+</body>
+</html>
+

@@ -1,0 +1,10 @@
+<!doctype html>
+<head><title>Test</title> 
+    <meta charset=utf-8> </head>
+    <body>
+<form action="{{ url_for("get_pincode")}}" method="post">
+  <label for="firstname">Enter Pincode:</label>
+  <input type="text" id="pincode" name="pincode" placeholder="Pincode">
+  <button type="submit">Generate</button>
+</form>
+</body>
